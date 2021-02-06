@@ -1,29 +1,26 @@
 #include<iostream>
 #include<string>
-
 using namespace std;
+#include"Vers.h"
 
-class Vers {
-    string suiteMot;
-    string rime;
+Vers::Vers(){}
+Vers::Vers(string sm){suiteMots=sm;}
+Vers::Vers(string sm, string r){suiteMots=sm;rime=r;}
+Vers::~Vers(){cout <<"Destruction du vers: " << suiteMots << " " << rime <<endl;}
 
-    public:
-        Vers(){}
-        Vers(string sm){ suiteMot = sm;}
-        Vers(string sm, string r){ suiteMot = sm; rime = r;}
-        ~Vers(){}
+string Vers::getSuiteMots()const { return suiteMots; }
 
-        string getSuiteMot() const { return suiteMot;}
-        void setSuiteMot(string sm) {suiteMot = sm;}
-        string getRime() const { return rime;}
-        void setRime(string r) { rime = r;}
+void Vers::setSuiteMots(string sm) { suiteMots=sm; }
 
-        void saisie(istream& is) {
-            cout << "Vers puis Rime" << endl;
-            is >> suiteMot >> rime;
-        }
-        void affiche(ostream& os) const {
-            os << suiteMot ;
-        }
+string Vers::getRime()const { return rime; }
 
-};
+void Vers::setRime(string r) { rime=r; }
+
+void Vers::saisie(istream& is){
+    cout <<"Saisisez le Vers puis la rime" <<endl;
+    is>>suiteMots>>rime;
+}
+
+void Vers::affiche(ostream& os)const {
+    os<<"<<"<<suiteMots<<">>";
+}

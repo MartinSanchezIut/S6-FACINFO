@@ -3,7 +3,11 @@
 
 using namespace std;
 
-#ifndef CompteBancaire.cc
+#ifndef compteD_cc
+#define compteD_cc
+#endif
+
+#ifndef compte_cc
 #include"CompteBancaire.cc"
 #endif
 
@@ -12,11 +16,16 @@ class CompteDepot : virtual public CompteBancaire{
 
     public:
         CompteDepot() : CompteBancaire(){}
+        CompteDepot(int taxe) : CompteBancaire(){ interet = taxe; }
 
-        virtual ~CompteDepot(){ cout << getSolde() - interet << endl;} 
+        virtual ~CompteDepot(){ cout << "Destruction Solde : (CD) " << getSolde() - interet << endl;} 
 
         virtual void deposer(float s){
-            setSolde(getSolde() + s - 1);
+            if (s < 1000.0) {
+                solde = (getSolde() + s - 1);
+            }else {
+                solde = (getSolde() + s + 10);
+            }
         }
 
         virtual void affiche(ostream& os) const {

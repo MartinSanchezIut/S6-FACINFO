@@ -253,6 +253,8 @@ public :
     }
 };
 
+
+
 class secure_account : public virtual account {
 public :
      secure_account (){cout << " - constructeur secure_account" << endl;  }

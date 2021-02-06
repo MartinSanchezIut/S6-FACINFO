@@ -3,7 +3,9 @@
 
 using namespace std;
 
-#include"Strophe.cc"
+#include"Vers.h"
+#include"Strophe.h"
+
 
 int main() {
 
