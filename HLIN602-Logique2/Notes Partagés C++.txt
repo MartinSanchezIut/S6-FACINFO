@@ -1,0 +1,308 @@
+Pour automatiser la compilation :
+
+un makefile pour vous simplifier le travail :
+	https://justpaste.it/56la0
+
+make sur windows :
+http://gnuwin32.sourceforge.net/packages/make.htm
+
+Autre version du Makefile (plus compacte) :
+
+	GPP=g++
+	SRC=Vers.cc Strophe.cc mainStrophe.cc
+	OBJ=$(SRC:%.cc=%.o)
+	EXE=mainStrophe
+	
+	all: $(OBJ)
+	        $(GPP) -o $(EXE) $(OBJ)
+	
+	clean:
+	        rm -f *~ *.o $(EXE)
+	+
+	.SUFFIXES: .cc .o
+	
+	%.o: %.cc
+	        $(GPP) -c $<
+
+POUR LES UTILISATEURS WINDOWS :
+
+#OBJS specifies which files to compile as part of the project
+OBJS = 
+
+#CC specifies which compiler we're using
+CC = g++
+
+#INCLUDE_PATHS specifies the additional include paths we'll need
+INCLUDE_PATHS = -I"C:\MinGW"
+
+#LIBRARY_PATHS specifies the additional library paths we'll need
+LIBRARY_PATHS = -L"C:\MinGW"
+
+#COMPILER_FLAGS specifies the additional compilation options we're using
+# -w suppresses all warnings
+# -Wl,-subsystem,windows gets rid of the console window
+COMPILER_FLAGS = -w -Wl,-subsystem,windows
+
+#LINKER_FLAGS specifies the libraries we're linking against
+LINKER_FLAGS = 
+
+#OBJ_NAME specifies the name of our exectuable
+OBJ_NAME = 
+
+#This is the target that compiles our executable
+all : $(OBJS)
+        $(CC) $(OBJS) $(INCLUDE_PATHS) $(LIBRARY_PATHS) $(COMPILER_FLAGS) $(LINKER_FLAGS) -o $(OBJ_NAME)
+        
+configuration vscode (task.json):
+    
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "g++.exe build active file",
+            "command": "C:\\mingw-w64\\mingw64\\bin\\g++.exe",
+            "args": [
+                "-Wall",
+                "-g",
+                "-ansi",
+                "-pedantic",
+                "${workspaceFolder}\\*.cpp",
+                "-o",
+                "main.exe"
+            ],
+            "options": {
+                "cwd": "C:\\mingw-w64\\mingw64\\bin"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": "build"
+        }
+    ]
+}
+
+Exercice 1 :
+
+g++ .\mainPoesie.cc .\Poesie.cc .\Strophe.cc .\Vers.cc -I. -o out
+    
+Pour commencer, aller voir le cours, une partie du code y est déjà décrite.
+
+    
+
+### Vers
+
+#include<iostream>
+#include<string>
+using namespace std;
+#include"Vers.h"
+
+
+Vers::Vers(){}
+Vers::Vers(string sm){suiteMots=sm;}
+Vers::Vers(string sm, string r){suiteMots=sm;rime=r;}
+Vers::~Vers(){cout <<"destructeur vers" <<endl;}
+
+string Vers::getSuiteMots()const
+{return suiteMots;}
+void Vers::setSuiteMots(string sm)
+{suiteMots=sm;}
+string Vers::getRime()const
+{return rime;}
+void Vers::setRime(string r)
+{rime=r;}
+
+void Vers::saisie(istream& is)
+{
+    cout <<"vers puis rime" <<endl;
+    is>>suiteMots>>rime;
+}
+
+void Vers::affiche(ostream& os)const
+{os<<"<<"<<suiteMots<<">>";}
+
+### Strophe 
+
+
+#include<iostream>
+#include<string>
+using namespace std;
+#include"Vers.h"
+#include"Strophe.h"
+
+Strophe::Strophe(){suiteVers=NULL; nbVers=0;}
+Strophe::Strophe(const Strophe& autreStrophe)
+{
+    /*
+    nbVers=autreStrophe.nbVers;
+    suiteVers=new Vers*[nbVers];
+    for (int i=0; i<nbVers; i++) 
+        suiteVers[i]=autreStrophe.suiteVers[i];
+    */
+    *this=autreStrophe; 
+}
+Strophe::~Strophe(){
+    if (suiteVers) 
+        delete[] suiteVers;
+}
+
+Vers* Strophe::vers(int i)const
+{
+    if (i>=0 && i<nbVers) 
+        return suiteVers[i]; 
+    else 
+        return NULL;
+}
+
+void Strophe::saisie(istream& is)
+{
+  if (suiteVers) delete[] suiteVers;
+  cout << "Entrer le nombre de vers : " << endl;
+  is>>nbVers; 
+  suiteVers = new Vers*[nbVers];
+  for (int i=0; i<nbVers; i++)
+    {
+      Vers *v = new Vers(); 
+      v->saisie(is); 
+      suiteVers[i]=v;
+    }
+}
+void Strophe::affiche(ostream& os)const
+{
+  for (int i=0; i<nbVers; i++)
+    {
+      suiteVers[i]->affiche(os); os << endl;
+    }  
+}
+
+------------------------------
+
+
+
+#### Compte
+
+class account {
+public :
+
+    float balance;
+
+    account() {
+    balance = 0;
+    cout << " - constructeur account" << endl;
+    }
+
+    ~account(){
+        cout << " fermeture de compte: " << balance << endl;
+    }
+
+    account(float initBalance) {
+    balance = initBalance;
+    cout << " - constructeur account" << endl;
+    }
+
+    float get() {
+        return balance;
+    }
+    virtual void deposit (float montant) {
+        cout << "account::deposit(montant) called" << endl;
+        balance += montant;
+    }
+
+    virtual int withdraw(float montant) {
+
+        cout << "withdraw account"<< balance<< endl;
+        balance -= montant;
+        cout << "withdraw account"<< balance<< endl;
+        return 1;
+    }
+
+    void print() {
+        cout << balance;
+    }
+
+    virtual void transfere (float montant, account* acc){
+        withdraw(montant);
+        acc-> deposit(montant);
+
+    }
+
+};
+
+
+##### CompteInteret
+
+class interest_account : public virtual account {
+
+public :
+
+    interest_account(){ cout << " - constructeur interest_account " << endl; }
+    interest_account(float initBalance) : account(initBalance){}
+
+    ~interest_account(){
+        this->interest();
+        cout << "total due: " << balance << endl;
+    }
+
+    void interest () {
+        balance += 0.10 * balance;
+    }
+    
+    void deposit (float montant) {
+        cout << "interest_account::deposit(montant) called" << endl;
+        balance += montant + (montant*0.01);
+    }
+};
+
+class secure_account : public virtual account {
+public :
+     secure_account (){cout << " - constructeur secure_account" << endl;  }
+     secure_account(float initBalance) : account(initBalance){}
+     ~secure_account(){
+        balance -= 100;
+        cout << "total due: " << balance << endl;
+        }
+
+    int withdraw(int montant) {
+
+            if (montant > balance) { cout << "retrait impossible"  << endl; return 0; }
+            else { balance -= montant; return 1; }
+    }
+
+    void deposit (float montant) {
+        cout << "secure_account::deposit(montant) called" << endl;
+        if(montant > 1000){
+            balance += montant + 10;
+        }else{
+            balance += montant -1;
+        }
+    }
+
+    // non acceptée
+    //float withdraw(float montant) {}
+
+    //surcharge
+    /*
+    void withdraw(int montant) {
+        balance -= montant;
+    }*/
+
+    /*void withdraw(float montant) {
+        balance -= montant;
+    }*/
+
+/*
+void transfere (float montant, account* acc){
+            int with = withdraw(montant);
+            if (with) acc-> deposit(montant);
+
+          }
+*/
+
+void transfere (float montant, secure_account* acc){
+            int with = withdraw(montant);
+            if (with) acc-> deposit(montant);
+
+          }
+
+};
+
