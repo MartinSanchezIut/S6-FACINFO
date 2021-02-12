@@ -1,18 +1,21 @@
 #include<iostream>
 #include<string>
 
-#include"Assoc.h"
-
+#include"Assoc.cc"
 
 using namespace std;
 
-template class Assoc<string, int>;
-//template ostream& operator<<(ostream&, const Assoc<string, int>&);
+/*
+template class Assoc<char, int*> ;
+template class Assoc<string, string> ;
+template ostream& operator<<(ostream&, const Assoc<string, string>&);
+template ostream& operator<<(ostream&, const Assoc<char, int*>&);
+*/
 
 int main(){
-    Assoc<string, int> a = Assoc<string, int>( "Test", 4);
-    Assoc<string, int>* pass = new Assoc<string, int>("Toto", 3) ;
+    Assoc<char, int*> a;
+    Assoc<string, string>* assoc = new Assoc<string, string>("test", "4");
 
-    //cout << *pass << endl;
-    //cout << a << endl;
+    cout << *assoc << endl;
+    cout << a << endl;
 }

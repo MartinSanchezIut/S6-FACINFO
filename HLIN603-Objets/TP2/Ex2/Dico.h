@@ -32,8 +32,9 @@ class Dico {
         virtual void affiche(ostream& os)const;
 
         void operator=(const Assoc);
-        ostream& operator<<(ostream&, const Assoc<dCle, dVal>);
 };
+template<typename dCle, typename dVal>
+ostream& operator<<(ostream&, const Assoc<dCle, dVal>);
 
 
 #endif

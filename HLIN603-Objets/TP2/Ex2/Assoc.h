@@ -26,6 +26,6 @@ class Assoc {
        
 };
 template<typename dCle, typename dVal>
-ostream& operator<<(ostream&, const Assoc<dCle, dVal>);
+ostream& operator<<(ostream&, const Assoc<dCle, dVal>&);
 
 #endif

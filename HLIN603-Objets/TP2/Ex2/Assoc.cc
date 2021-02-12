@@ -12,6 +12,9 @@ Assoc<dCle, dVal>::Assoc(dCle c, dVal v) {
 }
 
 template<typename dCle, typename dVal>
+Assoc<dCle, dVal>::Assoc() {}
+
+template<typename dCle, typename dVal>
 Assoc<dCle, dVal>::~Assoc() { }
 
 template<typename dCle, typename dVal>
@@ -33,5 +36,6 @@ void Assoc<dCle, dVal>::affiche(ostream& os)const {
 
 template<typename dCle, typename dVal>
 ostream& operator<<(ostream& os, const Assoc<dCle, dVal>& a){ 
-    a.affiche(os); return os;
+    os << a.getCle() << " -> " << a.getValeur();
+    return os;
 }
