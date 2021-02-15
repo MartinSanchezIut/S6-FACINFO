@@ -31,8 +31,9 @@ void Assoc<dCle, dVal>::setCle(dCle c) { cle = c; }
 template<typename dCle, typename dVal>
 void Assoc<dCle, dVal>::setVal(dVal v) {  valeur = v; }
 
+
 template<typename dCle, typename dVal>
-void Assoc<dCle, dVal>::affiche(ostream& os)const { 
+void Dico<dCle, dVal>::affiche(ostream& os)const { 
     for (size_t i = 0; i < size; i++){
         os << list[i].affiche() << endl;
     }
