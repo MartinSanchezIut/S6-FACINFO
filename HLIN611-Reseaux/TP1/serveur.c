@@ -47,8 +47,7 @@ int main(int argc, char *argv[]){
 	server.sin_family = AF_INET;
 	server.sin_addr.s_addr = inet_addr(INADDR_ANY);
 	server.sin_port = htons(argv[1]);
-
-	if (bind(ds, (struct sockaddr_in *) &server, sizeof(server)) < 0)	{
+	if (bind(ds, (struct sockaddr_in *) &server, sizeof(struct sockaddr_in)) < 0)	{
 		perror("Serveur : erreur bind");
 		close(ds); // je libère les ressources avant de terminer.
 		exit(1);   // je choisis de quitter le programme : la suite dépend de la réussite du nommage.
@@ -100,7 +99,7 @@ int main(int argc, char *argv[]){
      adresse IP et numéro de port de la structure adCv. Attention à
      faire les conversions du format réseau vers le format
      hôte. Utiliser la fonction inet_ntoa(..) pour l'IP.*/
-	printf("Serveur: le client %s:%d est connecté  \n", INET_NTOA(adCv.sin_addr.s_addr), adCv.sin_port);
+	printf("Serveur: le client %s:%d est connecté  \n", adCv.sin_addr.s_addr, adCv.sin_port);
 
 	// Je peux tester l'exécution de cette étape avant de passer à la suite.
 
