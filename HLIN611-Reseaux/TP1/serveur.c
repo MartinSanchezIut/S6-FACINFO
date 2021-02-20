@@ -45,8 +45,8 @@ int main(int argc, char *argv[]){
 
 	struct sockaddr_in server;
 	server.sin_family = AF_INET;
-	server.sin_addr.s_addr = inet_addr(INADDR_ANY);
-	server.sin_port = htons(argv[1]);
+	server.sin_addr.s_addr = INADDR_ANY;
+	server.sin_port = htons(atoi(argv[1]));
 	if (bind(ds, (struct sockaddr_in *) &server, sizeof(struct sockaddr_in)) < 0)	{
 		perror("Serveur : erreur bind");
 		close(ds); // je libère les ressources avant de terminer.
@@ -86,8 +86,7 @@ int main(int argc, char *argv[]){
 	printf("Serveur : j'attends la demande d'un client (accept) \n");
 
 	struct sockaddr_in adCv; // pour obtenir l'adresse du client accepté.
-	socklen_t lgCv = sizeof(struct sockaddr_in);
-
+	socklen_t lgCv = sizeof(adCv);
 
 	int dsCv = accept(ds, (struct sockaddr_in *) &adCv, lgCv);
 	if (dsCv < 0)	{ // je pense toujours à traiter les valeurs de retour.

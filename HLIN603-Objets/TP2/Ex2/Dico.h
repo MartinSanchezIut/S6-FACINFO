@@ -8,7 +8,7 @@ using namespace std;
 template<typename dCle, typename dVal>
 class Dico {
     private:
-        Assoc** list;        
+        Assoc<dCle, dVal>** list;        
         int size;
 
     public:
@@ -19,19 +19,19 @@ class Dico {
         virtual int getSize()const;
 
         virtual dVal get(dCle c)const;
-        virtual Assoc getIndex(int i)const;
+        virtual Assoc<dCle, dVal> getIndex(int i)const;
 
-        virtual void put(dCle c, dVam v);
-        virtual void put(Assoc);
+        virtual void put(dCle c, dVal v);
+        virtual void put(Assoc<dCle, dVal>);
 
-        virtual Assoc pop(dCle c);
-        virtual Assoc pop(int i);
+        virtual Assoc<dCle, dVal> pop(dCle c);
+        virtual Assoc<dCle, dVal> pop(int i);
 
         virtual bool contains(dCle c)const;
 
         virtual void affiche(ostream& os)const;
 
-        void operator=(const Assoc);
+        void operator=(const Assoc<dCle, dVal>);
 };
 template<typename dCle, typename dVal>
 ostream& operator<<(ostream&, const Assoc<dCle, dVal>);

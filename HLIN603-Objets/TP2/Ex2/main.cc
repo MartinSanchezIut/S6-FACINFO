@@ -2,6 +2,7 @@
 #include<string>
 
 #include"Assoc.cc"
+//#include"Dico.cc"
 
 using namespace std;
 

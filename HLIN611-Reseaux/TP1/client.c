@@ -48,9 +48,12 @@ int main(int argc, char *argv[]){
 	/* Etape 2 : designer la socket du serveur : avoir une structure qui
      contient l'adresse de cette socket (IP + numéro de port. */
 	struct sockaddr_in adrServ;
-	adrServ.sin_addr.s_addr = inet_addr(argv[1]);
 	adrServ.sin_family = AF_INET;
-	adrServ.sin_port = htons(argv[2]);
+	adrServ.sin_port = htons(atoi(argv[2]));
+    if(inet_pton(AF_INET,argv[1],&(adrServ.sin_addr)) < 1){ 	//inet_pton(AF_INET,argv[1],&(adrServ.sin_addr)) ;   	//adrServ.sin_addr.s_addr = inet_addr(argv[1]);
+        perror("client: inet_pton() error ->");
+        exit(1);
+    }
 
 	int lgAdr = sizeof(struct sockaddr_in);
 
