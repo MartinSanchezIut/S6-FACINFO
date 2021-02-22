@@ -86,9 +86,9 @@ int main(int argc, char *argv[]){
 	printf("Serveur : j'attends la demande d'un client (accept) \n");
 
 	struct sockaddr_in adCv; // pour obtenir l'adresse du client accepté.
-	socklen_t lgCv = sizeof(adCv);
+	socklen_t lgCv = sizeof(struct sockaddr_in);
 
-	int dsCv = accept(ds, (struct sockaddr_in *) &adCv, lgCv);
+	int dsCv = accept(ds, (struct sockaddr*) &adCv, &lgCv);
 	if (dsCv < 0)	{ // je pense toujours à traiter les valeurs de retour.
 		perror("Serveur, probleme accept :");
 		close(ds);

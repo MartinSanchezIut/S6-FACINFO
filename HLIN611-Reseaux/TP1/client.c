@@ -17,7 +17,6 @@
 
 
 int main(int argc, char *argv[]){
-
 	/* je passe en paramètre l'adresse de la socket d'écoute du serveur
      (IP et numéro de port). Je teste donc le passage de parametres */
 
@@ -26,9 +25,9 @@ int main(int argc, char *argv[]){
 		exit(0);
 	}
 
+
 	/* Etape 1 : créer une socket */
 	int ds = socket(AF_INET, SOCK_STREAM, 0);
-
 	/* /!\ : Il est indispensable de tester les valeurs de retour de
      toutes les fonctions et agir en fonction des valeurs possibles.*/
 	if (ds == -1){
