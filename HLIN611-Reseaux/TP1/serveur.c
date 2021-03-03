@@ -88,7 +88,7 @@ int main(int argc, char *argv[]){
 	socklen_t lgCv = sizeof(struct sockaddr);
 
 
-	int nbOfClients = 3;
+	int nbOfClients = 1;
 	for (size_t i = 0; i < nbOfClients; i++){
 
 		int dsCv = accept(ds, (struct sockaddr *)&adCv, &lgCv);
@@ -99,41 +99,33 @@ int main(int argc, char *argv[]){
 			exit(1);
 		}
 
-		/*
-		pid_t pid = fork() ;
-		if (pid < 0) {
-			perror("Erreur de fork :");
+		/* je peux afficher l'adresse de la socket du client accepté :
+		adresse IP et numéro de port de la structure adCv. Attention à
+		faire les conversions du format réseau vers le format
+		hôte. Utiliser la fonction inet_ntoa(..) pour l'IP.*/
+		printf("Serveur: le client %s:%d est connecté  \n", inet_ntoa(adCv.sin_addr), ntohs(adCv.sin_port));
+
+		// Je peux tester l'exécution de cette étape avant de passer à la suite.
+		/* Etape 5 : réception d'un message de type chaîne de caractères */
+
+		int size;
+		int rcvSize = recv(dsCv, &size, sizeof(size), 0);
+		if (rcvSize < 0){
+			perror("Probleme de reception");
+			//close(ds);
 			close(dsCv);
+			exit(1);
 		}
-		*/
-		if (1) { //(pid == 0) {  // Le cas de l'enfant 
+		printf("Je suis sencé recevoir %d octets \n", size);
 
 
-			/* je peux afficher l'adresse de la socket du client accepté :
-			adresse IP et numéro de port de la structure adCv. Attention à
-			faire les conversions du format réseau vers le format
-			hôte. Utiliser la fonction inet_ntoa(..) pour l'IP.*/
-			printf("Serveur: le client %s:%d est connecté  \n", inet_ntoa(adCv.sin_addr), ntohs(adCv.sin_port));
-
-			// Je peux tester l'exécution de cette étape avant de passer à la suite.
-			/* Etape 5 : réception d'un message de type chaîne de caractères */
-
-			int size;
-			int rcvSize = recv(dsCv, &size, sizeof(size), 0);
-			if (rcvSize < 0){
-				perror("Probleme de reception");
-				//close(ds);
-				close(dsCv);
-				exit(1);
-			}
-			printf("Je suis sencé recevoir %d octets \n", size);
-
-
-			char buffer[2001];
-			/* attendre un message dont la taille maximale est 500 octets. Pour
-			cet exercice, il est demandé de ne faire qu'un seul appel à recv
-			pour recevoir un message. */
-			int rcv = recv(dsCv, &buffer, sizeof(buffer), 0);
+		char buffer[2001];
+		/* attendre un message dont la taille maximale est 500 octets. Pour
+		cet exercice, il est demandé de ne faire qu'un seul appel à recv
+		pour recevoir un message. */
+		int dejaLu = 0;
+		while (dejaLu < size){			
+			int rcv = recv(dsCv, &buffer[dejaLu], sizeof(buffer), 0);
 			/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
 			if (rcv < 0){
 				perror("Probleme de reception");
@@ -147,44 +139,44 @@ int main(int argc, char *argv[]){
 				close(dsCv);
 				exit(1);
 			}
-			buffer[rcv] = '\0';
-
-			/* Afficher le nombre d'octets EFFECTIVEMENT reçus. : /!\ Faire la
-			différence entre le nombre d'octets qu'on demande à extraire
-			depuis le buffer de réception d'une socket et le nombre d'octets
-			qu'on a effectivement réussi à extraire.*/
-
-			printf("Serveur : j'ai recu %d octets \n", rcv);
-			printf("Serveur : contenu du message : %s \n", buffer);
-
-			// Je peux tester l'exécution de cette étape avant de passer à la suite.
-
-			/* Etape 6 : répondre au client en lui envoyant le nombre d'octets
-			effectivement reçus à l'étape 5. Pour cet exercice, faire un seul
-			appel de la fonction send.*/
-			int snd = send(dsCv, &rcv, sizeof(rcv), 0);
-
-			/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
-			if (snd < 0)		{
-				perror("Serveur : Probleme d'emission");
-				//close(ds);
-				close(dsCv);
-				exit(1);
-			}
-			if (snd < sizeof(rcv))		{
-				printf("Serveur : Probleme d'emission, j'ai envoyé que %d octets \n", snd);
-				//close(ds);
-				close(dsCv);
-				exit(1);
-			}
-
-			/* Etape 7 : fermeture de la socket du client */
-			printf("Serveur : fin du dialogue avec le client\n");
-			close(dsCv);
-
+			dejaLu += rcv;
 		}
-		int status;
-		while (wait(&status) > 0);
+		buffer[size] = '\0';
+
+		/* Afficher le nombre d'octets EFFECTIVEMENT reçus. : /!\ Faire la
+		différence entre le nombre d'octets qu'on demande à extraire
+		depuis le buffer de réception d'une socket et le nombre d'octets
+		qu'on a effectivement réussi à extraire.*/
+
+		printf("Serveur : j'ai recu %d octets \n", dejaLu);
+		printf("Serveur : contenu du message : %s \n", buffer);
+
+		// Je peux tester l'exécution de cette étape avant de passer à la suite.
+
+		/* Etape 6 : répondre au client en lui envoyant le nombre d'octets
+		effectivement reçus à l'étape 5. Pour cet exercice, faire un seul
+		appel de la fonction send.*/
+		int snd = send(dsCv, &dejaLu, sizeof(dejaLu), 0);
+
+		/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
+		if (snd < 0)		{
+			perror("Serveur : Probleme d'emission");
+			//close(ds);
+			close(dsCv);
+			exit(1);
+		}
+		if (snd < sizeof(dejaLu))		{
+			printf("Serveur : Probleme d'emission, j'ai envoyé que %d octets \n", snd);
+			//close(ds);
+			close(dsCv);
+			exit(1);
+		}
+
+		/* Etape 7 : fermeture de la socket du client */
+		printf("Serveur : fin du dialogue avec le client\n");
+		close(dsCv);
+
+
 	}
 
 	// Etape 8 : pour cet exercice, je ne traite qu'un client, donc, je termine proprement.
