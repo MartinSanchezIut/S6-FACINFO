@@ -132,6 +132,7 @@ def urlIsValid(url):
     return True
 
 
+# Ne sert a pas grand chose ..
 def getIpOf(host):
     ip = ""
     try:
@@ -204,7 +205,7 @@ def verif():
 if __name__ == "__main__":
     # url = input("Entrez l'url: ")
 
-    getIpOf("www.lirmm.fr")
-    verif()
-    # print(inspect("http://www.lirmm.fr/", 1))
+    # getIpOf("www.lirmm.fr")
+    # verif()
+    print(inspect("http://www.lirmm.fr/", 3))
     # print(listOfLinksOf("http://www.lirmm.fr/"))
