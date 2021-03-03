@@ -7,6 +7,7 @@
 #include <arpa/inet.h>
 #include <string.h>
 
+
 /* Rôle du client : envoyer une demande de connexion à un serveur,
    envoyer une chaîne de caractères à ce serveur (la chaîne de
    caractère est à saisir au clavier), recevoir un entier et comparer
@@ -54,14 +55,12 @@ int main(int argc, char *argv[]){
         exit(1);
     }
 
-	int lgAdr = sizeof(struct sockaddr_in);
-
+	//int lgAdr = sizeof(struct sockaddr_in);
 
 	/* Etape 3 : envoyer une demande de connexion au serveur.*/
 	int conn = connect(ds, (struct sockaddr *)&adrServ, sizeof(adrServ));
 	// je traite les valeurs de retour
-	if (conn < 0)
-	{
+	if (conn < 0)	{
 		perror("Client: pb au connect :");
 		close(ds); // je libère les ressources avant de terminer.
 		exit(1);   // je choisi de quitter le programme : la suite dépend
@@ -77,12 +76,11 @@ int main(int argc, char *argv[]){
 	/* Etape 4 : envoyer un message au serveur. Ce message est une chaîne de caractères saisie au clavier. Vous pouvez utiliser une autre fonction pour la saisie. */
 
 	printf("saisir un message à envoyer (moins de 200 caracteres) \n");
-	char m[202];
+	char m[501];
 	fgets(m, sizeof(m), stdin); // copie dans m la chaîne saisie que
 								// clavier (incluant les esaces et le
 								// saut de ligne à la fin).
 	m[strlen(m) - 1] = '\0';	// je retire le saut de ligne
-
 
 	/* Pour cet exercice, demander à envoyer la chaîne saisie avec un
      seul appel à send(..). /!\ Envoyer uniquement les données
@@ -92,17 +90,39 @@ int main(int argc, char *argv[]){
      serveur s'attends à recevoir une chaine de caractères y compris le
      caractère de fin */
 
-	int snd = send(ds, &m, strlen(m), 0);
-	/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
-	if (snd < 0){
-		perror("Probleme d'emission");
+	printf("Chaine : %s \n", m);
+	int sizeToSend = strlen(m)+1 ;
+	printf("Taille: %d \n", sizeToSend);
+	int sndSize = send(ds, &sizeToSend, sizeof(sizeToSend), 0);  // Envoie la taille du teste en premier
+	if (sndSize < 0){
+		perror("Probleme d'emission taille");
 		close(ds);
 		exit(1);
 	}
-	if (snd < strlen(m)){
-		printf("Probleme d'emission, j'ai envoyé que %d octets", snd);
+	if (sndSize < sizeof(int)){
+		printf("Probleme d'emission, j'ai envoyé que %d octets", sndSize);
 		close(ds);
 		exit(1);
+	}
+	
+
+
+	int totalEnvoye = 0;  // Modif pour l'exo 2
+	for (size_t i = 0; i < 1; i++)	{
+		
+		int snd = send(ds, &m, strlen(m)+1, 0);
+		/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
+		if (snd < 0){
+			perror("Probleme d'emission");
+			close(ds);
+			exit(1);
+		}
+		if (snd < strlen(m)){
+			printf("Probleme d'emission, j'ai envoyé que %d octets", snd);
+			close(ds);
+			exit(1);
+		}
+		totalEnvoye += snd;
 	}
 
 		/* Afficher le nombre d'octets EFFECTIVEMENT déposés dans le buffer
@@ -110,7 +130,7 @@ int main(int argc, char *argv[]){
      nombre d'octet qu'on demande à déposer / envoyer et le nombre
      d'octets qu'on a effectivement déposés.*/
 
-	printf("Client : j'ai déposé %d octets \n", snd);
+	printf("Client : j'ai déposé %d octets \n", totalEnvoye);
 
 
 	// Je peux tester l'exécution de cette étape avant de passer à la suite.
@@ -138,7 +158,7 @@ int main(int argc, char *argv[]){
 		exit(1);
 	}
 	if (rcv < sizeof(reponse)){
-		printf("Probleme de reception, j'ai reçu que %d octets", rcv);
+		printf("Probleme de reception, j'ai reçu que %d octets \n", rcv);
 		close(ds);
 		exit(1);
 	}
@@ -147,7 +167,7 @@ int main(int argc, char *argv[]){
 	/* Etape 6 : je compare le nombre d'octets déposés (envoyés) avec
      la valeur reçue. L'objectif est d'avoir la même valeur. */
 
-	printf("Client : j'ai envoyé %d octets et le serveur me répond qu'il a reçu : %d octets \n", rcv, reponse);
+	printf("Client : j'ai envoyé %d octets et le serveur me répond qu'il a reçu : %d octets \n", totalEnvoye, reponse);
 
 	/* Etape 7 : je termine proprement. */
 
