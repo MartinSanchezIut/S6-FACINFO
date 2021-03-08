@@ -1,0 +1,23 @@
+# Date de création du Fichier: lun. 08 mars 2021 12:22:20 CET
+#Fct	a	b	res	tps	mem
+Math	0	0	0	0	0
+#Fct	a	b	res	tps	mem
+Math	0	10000	50005000	0	0
+#Fct	a	b	res	tps	mem
+Math	0	20000	200010000	0	0
+#Fct	a	b	res	tps	mem
+Math	0	30000	450015000	1	0
+#Fct	a	b	res	tps	mem
+Math	0	40000	800020000	0	0
+#Fct	a	b	res	tps	mem
+Math	0	50000	1250025000	0	0
+#Fct	a	b	res	tps	mem
+Math	0	60000	1800030000	0	0
+#Fct	a	b	res	tps	mem
+Math	0	70000	302551352	0	0
+#Fct	a	b	res	tps	mem
+Math	0	80000	1052556352	0	0
+#Fct	a	b	res	tps	mem
+Math	0	90000	1902561352	0	0
+#Fct	a	b	res	tps	mem
+Math	0	100000	705082704	0	0

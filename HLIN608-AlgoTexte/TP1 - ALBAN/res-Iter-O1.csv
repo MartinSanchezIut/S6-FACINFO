@@ -1,0 +1,23 @@
+# Date de création du Fichier: lun. 08 mars 2021 12:22:04 CET
+#Fct	a	b	res	tps	mem
+Iter	0	0	0	0	0
+#Fct	a	b	res	tps	mem
+Iter	0	10000	50005000	30	0
+#Fct	a	b	res	tps	mem
+Iter	0	20000	200010000	56	0
+#Fct	a	b	res	tps	mem
+Iter	0	30000	450015000	80	0
+#Fct	a	b	res	tps	mem
+Iter	0	40000	800020000	115	0
+#Fct	a	b	res	tps	mem
+Iter	0	50000	1250025000	139	0
+#Fct	a	b	res	tps	mem
+Iter	0	60000	1800030000	164	0
+#Fct	a	b	res	tps	mem
+Iter	0	70000	2450035000	123	0
+#Fct	a	b	res	tps	mem
+Iter	0	80000	3200040000	187	0
+#Fct	a	b	res	tps	mem
+Iter	0	90000	4050045000	207	0
+#Fct	a	b	res	tps	mem
+Iter	0	100000	705082704	271	0
