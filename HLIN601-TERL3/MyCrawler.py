@@ -3,6 +3,7 @@ import time
 import socket
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
+import sys
 
 DEBUG = True
 DEBUG_REQUEST = True
@@ -10,13 +11,10 @@ DEBUG_REQUEST = True
 
 def inspect(url, deep):
     global DEBUG
-
-    # if url[len(url) - 1] == "/":
-    #     url = url[0:len(url) - 1]
     if DEBUG: print("URL: " + url)
 
     o = urlparse(url)
-    domain = o.netloc.removeprefix("www.")
+    domain = o.netloc  # .removeprefix("www.")
     if DEBUG: print("O : " + str(o) + "\n")
 
     start = time.time()
@@ -31,27 +29,27 @@ def inspect(url, deep):
     profondeur = deep
     while len(listOfUrl) > 0:
         linkToInspect = listOfUrl.pop()
-        if DEBUG: print("Request on " + linkToInspect)
-
-        if not linkToInspect in allUrlVisited:
-            allUrlVisited.append(linkToInspect)
-            visitedCount.append(1)
-            if DEBUG: print("The link is not in 'AllUrlVisited'")
-        else:
-            index = allUrlVisited.index(linkToInspect)
-            visitedCount[index] += 1
-            if DEBUG: print("The link is in 'AllUrlVisited'")
 
         if linkToInspect.startswith("/"):
             linkToInspect = url + linkToInspect
 
-        if DEBUG: print("Profondeur : " + str(profondeur) + "\n")
-        if profondeur > 0 and urlIsValid(linkToInspect):
-            # (linkToInspect.endswith(".html") or linkToInspect.endswith(".php")
-            #  or not linkToInspect.endswith(".*")):   Le truc a modifier
+        if not linkToInspect in allUrlVisited:
+            allUrlVisited.append(linkToInspect)
+            visitedCount.append(1)
+            if DEBUG: print("Request on " + linkToInspect + "  [NOT VISITED]")
+            hasToVisit = True
 
+        else:
+            index = allUrlVisited.index(linkToInspect)
+            visitedCount[index] += 1
+            if DEBUG: print("Request on " + linkToInspect + "  [VISITED]")
+            hasToVisit = False
+
+        if DEBUG: print("Profondeur : " + str(profondeur) + "\n")
+        if (profondeur > 0 or profondeur == -1) and urlIsValid(linkToInspect, domain) and hasToVisit:
             returnList = listOfLinksOf(linkToInspect, domain)
-            profondeur -= 1
+            if profondeur != -1:
+                profondeur -= 1
 
             for x in returnList:
                 if not x in allUrlVisited:
@@ -59,24 +57,29 @@ def inspect(url, deep):
 
     end = time.time()
     if DEBUG: print("Ends at: " + str(end))
+    if DEBUG: print("Time : " + str(end - start))
 
-    file = open("Result.txt", 'w+')
-    file.write("Task ended in " + str(end - start) + " \n\n")
+    file = open("result.txt", 'w+')
+    file2 = open("fancyResult.txt", 'w+')
+    file2.write("Task ended in " + str(end - start) + " \n\n")
     for element in range(0, len(allUrlVisited)):
-        file.write("'" + allUrlVisited[element] + "',\n")
-        amountOfSpace = 100 - len(str(allUrlVisited[element]))
-        # file.write(
-        #    str(allUrlVisited[element]) + (" " * amountOfSpace) + " : Visited " + str(visitedCount[element]) + "\n")
+        file.write(allUrlVisited[element] + "\n")
 
+        amountOfSpace = 100 - len(str(allUrlVisited[element]))
+        file2.write(
+            str(allUrlVisited[element]) + (" " * amountOfSpace) + " : Visited " + str(visitedCount[element]) + "\n")
     return 1
 
 
 def listOfLinksOf(url, domain):
     global DEBUG_REQUEST
-
+    urlData = urlparse(url)
     urlToCrawl = []
     try:
         req = requests.get(url)
+        if not req.ok:  # print(req.is_redirect)
+            return urlToCrawl
+
         text = req.text
         soup = BeautifulSoup(text, features="html.parser")
         links = soup.find_all('a')
@@ -86,14 +89,15 @@ def listOfLinksOf(url, domain):
         for tag in links:
             link = tag.get('href', None)
 
-            if link.startswith("/") and not link == "/":
-                link = url[:-1] + link
+            if link is not None and len(link.split(".")) == 2 and (link.endswith(".php") or link.endswith(".html")):
+                link = str(urlData.scheme) + "://" + str(urlData.netloc) + "/" + str(link)
+            if link is not None and link.startswith("/") and not link == "/":
+                link = str(url[:-1]) + str(link)
+
             newLinkData = urlparse(link)
 
-            if newLinkData.netloc.__contains__(domain):
+            if str(newLinkData.netloc).__contains__(domain):
                 if link is not None and not link.startswith("#") and not link.startswith("mailto:"):
-                    # if link.endswith("/"):
-                    #    link = link[:-1]
                     urls.append(link)
             else:
                 trash.append(link)
@@ -101,51 +105,38 @@ def listOfLinksOf(url, domain):
         urlToCrawl = list(dict.fromkeys(urls))
 
         if DEBUG_REQUEST:
-            print("    " + url + "\n    ---------------------------------------")
+            print("    " + str(url) + "\n    ---------------------------------------")
             fileUrls = ""
             for x in urlToCrawl:
-                fileUrls += "   " + x + " |"
+                fileUrls += "   " + str(x) + " |"
             print(fileUrls)
             fileUrls = "   Trash : "
             for y in trash:
-                fileUrls += "   " + y + " |"
+                fileUrls += "   " + str(y) + " |"
             print(fileUrls)
             print("    ---------------------------------------  \n\n")
 
     except Exception as error:
-        if DEBUG_REQUEST: print("   " + url + ": Error\n")
+        if DEBUG_REQUEST: print("   " + str(url) + ": Error  ( " + str(error) + ")\n")
 
     return urlToCrawl
 
 
-def urlIsValid(url):
+def urlIsValid(url, domain):
     tab = url.split("/")
     last = tab[-1]
-    lastReversed = tab[-1][::-1]
-    for i in range(0, len(lastReversed)):
-        if lastReversed[i] == ".":
+    if last.__eq__(domain):
+        return True
+    for i in range(0, len(last)):
+        if last[i] == ".":
             # On trouve un point avant un /
             # Verifier les terminaisons
-            if not last.endswith(".html") or last.endswith(".php"):
+            if not (last.endswith(".html") or last.endswith(".php")):
                 return False
-
     return True
 
 
-# Ne sert a pas grand chose ..
-def getIpOf(host):
-    ip = ""
-    try:
-        ip = socket.gethostbyname(host)
-        # print("Ip de " + host + " est : " + socket.gethostbyname(host))
-    except Exception as e:
-        ip = "-1"
-        # print("Erreur de récupération de l'ip: ", e)
-
-    return ip
-
-
-def verif():
+def verif(domain):
     urlToValid = ['http://www.lirmm.fr/',
                   'http://www.lirmm.fr/switchlanguage/to/lirmm_eng/65',
                   'http://www.lirmm.fr/rssfeed/news',
@@ -199,13 +190,37 @@ def verif():
                   'https://intranet.lirmm.fr/xml/in/0309-29.html']
 
     for i in range(0, len(urlToValid)):
-        print(str(urlToValid[i]) + "  =   " + str(urlIsValid(urlToValid[i])))
+        print(str(urlToValid[i]) + "  =   " + str(urlIsValid(urlToValid[i], domain)))
 
 
 if __name__ == "__main__":
-    # url = input("Entrez l'url: ")
+    # print(urlIsValid("http://petit-site-internet.com/contact.php", "petit-site-internet.com"))
+    # print(listOfLinksOf("http://petit-site-internet.com/contact.php", "petit-site-internet.com"))
+    # exit(1)
 
-    # getIpOf("www.lirmm.fr")
-    # verif()
-    print(inspect("http://www.lirmm.fr/", 3))
-    # print(listOfLinksOf("http://www.lirmm.fr/"))
+    # Temporaire
+    url = "https://www.lirmm.fr/"
+    deep = 10
+
+    print("$ ./myCrawler " + url + " " + str(deep) + "\n")
+    print(inspect(url, int(deep)))
+
+    # Fin temporaire
+
+    if len(sys.argv) < 2 or len(sys.argv) > 3:
+        print("Usage : myCrawler.py <url> [deep]")
+        exit(1)
+    else:
+        url = ""
+        deep = -1
+        if len(sys.argv) >= 2:
+            url = sys.argv[1]
+        if len(sys.argv) == 3:
+            deep = sys.argv[2]
+
+        print("$ ./myCrawler " + url + " " + str(deep) + "\n")
+        print(inspect(url, int(deep)))
+
+        # verif()
+        # print(inspect("http://www.lirmm.fr/", 3))
+        # print(listOfLinksOf("http://www.lirmm.fr/"))
