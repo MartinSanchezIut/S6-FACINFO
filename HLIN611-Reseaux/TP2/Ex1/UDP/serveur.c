@@ -55,17 +55,19 @@ int main(int argc, char *argv[]){
 	// recevoir un premier message puis mettre en place la boucle de
 	// réception de la suite.
 	printf("Serveur: j'attends de recevoir un premier message\n");
-	int rcv = recvfrom(ds, &messagesRecus[0], sizeof(long int), 0, &addrC, &lgAddrC);
+	int k = 500;//sizeof(long int);
+
+	int rcv = recvfrom(ds, &messagesRecus[0], k, 0, &addrC, &lgAddrC);
 	if (rcv < 0) {
 		perror("Erreur rcv <0");
 		close(ds);
 		exit(1);
 	}
-	if (rcv < sizeof(long int)) {
+	/*if (rcv < k) {
 		perror("Erreur rcv < sizeof(long int)");
 		close(ds);
 		exit(1);
-	}
+	}*/
 
 	// qui a envoyé le message reçu ?
 	printf("Serveur: le client %s:%d m'a envoyé un message  \n", inet_ntoa(addrC.sin_addr), ntohs(addrC.sin_port));
@@ -81,7 +83,7 @@ int main(int argc, char *argv[]){
 		// le serveur n'a pas connaissance du nombre de messages
 		// qu'il recevra, d'où la boucle infinie.
 
-		rcv = recvfrom(ds, &messagesRecus[0], sizeof(long int), 0, &addrC, &lgAddrC);
+		rcv = recvfrom(ds, &messagesRecus[0], k, 0, &addrC, &lgAddrC);
 
 		/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
 		if (rcv < 0) {
@@ -89,11 +91,11 @@ int main(int argc, char *argv[]){
 			close(ds);
 			exit(1);
 		}
-		if (rcv < sizeof(long int)) {
+		/*if (rcv < k) {
 			perror("Erreur rcv < sizeof(long int)");
 			close(ds);
 			exit(1);
-		}
+		}*/
 
 		// qui a envoyé le message reçu ?
 		printf("Serveur: le client %s:%d m'a envoyé un message  \n", inet_ntoa(addrC.sin_addr), ntohs(addrC.sin_port));

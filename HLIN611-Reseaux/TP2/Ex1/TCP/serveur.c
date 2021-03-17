@@ -84,48 +84,31 @@ int main(int argc, char *argv[]){
 
 	struct sockaddr_in adCv;
 	socklen_t lgCv = sizeof(struct sockaddr_in);
-	int dsCv = accept(ds, (struct sockaddr *)&adCv, &lgCv);
-	if (dsCv < 0){
-		perror("Serveur, probleme accept :");
-		close(ds);
-		exit(1);
-	}
 
-	printf("Serveur: le client %s:%d est connecté  \n", inet_ntoa(adCv.sin_addr), ntohs(adCv.sin_port));
+	for (int i = 0; i < 3; ++i) {
 
-	/* Réception de messages, chaque message est un long int */
+		int dsCv = accept(ds, (struct sockaddr *)&adCv, &lgCv);
+		if (dsCv < 0){
+			perror("Serveur, probleme accept :");
+			close(ds);
+			exit(1);
+		}
 
-	long int messagesRecus[2]; // je defini ce tableau pour garder le
-							   // message précédent (voir plus bas)
+		printf("Serveur: le client %s:%d est connecté  \n", inet_ntoa(adCv.sin_addr), ntohs(adCv.sin_port));
 
-	unsigned int nbTotalOctetsRecus = 0;
-	unsigned int nbAppelRecv = 0;
+		/* Réception de messages, chaque message est un long int */
 
-	// recevoir un premier message puis mettre en place la boucle de
-	// réception de la suite.
+		long int messagesRecus[2]; // je defini ce tableau pour garder le
+								   // message précédent (voir plus bas)
 
-	int rcv = recvTCP(dsCv, (char *)messagesRecus, sizeof(long int), &nbTotalOctetsRecus, &nbAppelRecv);
+		unsigned int nbTotalOctetsRecus = 0;
+		unsigned int nbAppelRecv = 0;
 
-	/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
-	if (rcv < 0){
-		perror("Erreur de réception");
-		close(dsCv);
-		close(ds);
-		exit(1);
-	}
+		// recevoir un premier message puis mettre en place la boucle de
+		// réception de la suite.
+		int k = sizeof(long int);
 
-	printf("Serveur : j'ai reçu au total %d octets avec %d appels à recv \n", nbTotalOctetsRecus, nbAppelRecv);
-
-    printf("Serveur : saisir un caractère avant de poursuivre \n");
-    fgetc(stdin);
-    
-	while (1){	
-		// le serveur n'a pas connaissance du nombre de messages
-		// qu'il recevra, donc, il boucle et la gestion des
-		// valeurs de retours de fonctions permettra de sortir
-		// de la boucle pour arrêter le serveur.
-
-		rcv = recvTCP(dsCv, (char *)(messagesRecus + 1), sizeof(long int), &nbTotalOctetsRecus, &nbAppelRecv);
+		int rcv = recvTCP(dsCv, (char *)messagesRecus, k, &nbTotalOctetsRecus, &nbAppelRecv);
 
 		/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
 		if (rcv < 0){
@@ -134,20 +117,42 @@ int main(int argc, char *argv[]){
 			close(ds);
 			exit(1);
 		}
-		else if (rcv == 0){	break;}
-
-		if (messagesRecus[1] < messagesRecus[0]) // si la valeur reçue est inférieure à la précédente, alors désordre.
-			printf("Serveur : reception dans le désordre : %ld reçu après %ld \n", messagesRecus[1], messagesRecus[0]);
-
-		/* garder la valeur précédente pour la prochaine comparaison*/
-		messagesRecus[0] = messagesRecus[1];
 
 		printf("Serveur : j'ai reçu au total %d octets avec %d appels à recv \n", nbTotalOctetsRecus, nbAppelRecv);
-	}
 
-	// terminer proprement votre programme
-	close(dsCv);
-	printf("Serveur : fin du dialogue avec le client\n");
+	    printf("Serveur : saisir un caractère avant de poursuivre \n");
+	    fgetc(stdin);
+	    
+		while (1){	
+			// le serveur n'a pas connaissance du nombre de messages
+			// qu'il recevra, donc, il boucle et la gestion des
+			// valeurs de retours de fonctions permettra de sortir
+			// de la boucle pour arrêter le serveur.
+
+			rcv = recvTCP(dsCv, (char *)(messagesRecus + 1), k, &nbTotalOctetsRecus, &nbAppelRecv);
+
+			/* Traiter TOUTES les valeurs de retour (voir le cours ou la documentation). */
+			if (rcv < 0){
+				perror("Erreur de réception");
+				close(dsCv);
+				close(ds);
+				exit(1);
+			}
+			else if (rcv == 0){	break;}
+
+			if (messagesRecus[1] < messagesRecus[0]) // si la valeur reçue est inférieure à la précédente, alors désordre.
+				printf("Serveur : reception dans le désordre : %ld reçu après %ld \n", messagesRecus[1], messagesRecus[0]);
+
+			/* garder la valeur précédente pour la prochaine comparaison*/
+			messagesRecus[0] = messagesRecus[1];
+
+			printf("Serveur : j'ai reçu au total %d octets avec %d appels à recv \n", nbTotalOctetsRecus, nbAppelRecv);
+		}
+
+		// terminer proprement votre programme
+		close(dsCv);
+		printf("Serveur : fin du dialogue avec le client\n");
+	}
 
 	close(ds);
 	printf("Serveur : je termine\n");
