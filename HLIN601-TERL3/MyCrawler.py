@@ -4,13 +4,18 @@ import socket
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import sys
+import csv
 
 DEBUG = True
+DEBUG_LOOP = True
 DEBUG_REQUEST = True
+DEBUG_ADD = True
 
 
 def inspect(url, deep):
-    global DEBUG
+    global DEBUG, DEBUG_ADD, DEBUG_LOOP
+    file = open("result.txt", 'w+')
+
     if DEBUG: print("URL: " + url)
 
     o = urlparse(url)
@@ -29,45 +34,75 @@ def inspect(url, deep):
     profondeur = deep
     while len(listOfUrl) > 0:
         linkToInspect = listOfUrl.pop()
+        if DEBUG_LOOP: print("Link selected: " + str(linkToInspect))
 
-        if linkToInspect.startswith("/"):
-            linkToInspect = url + linkToInspect
+        if linkToInspect is not None and len(linkToInspect.split(".")) == 2 and (
+                linkToInspect.endswith(".php") or linkToInspect.endswith(".html")):
+            linkToInspect = str(o.scheme) + "://" + str(o.netloc) + "/" + str(linkToInspect)
+            if DEBUG_LOOP: print("   Link after modification: " + str(linkToInspect) + "\n")
+        if linkToInspect is not None and linkToInspect.startswith("/") and not linkToInspect == "/":
+            linkToInspect = str(o.scheme) + "://" + str(o.netloc) + str(linkToInspect)
+            if DEBUG_LOOP: print("   Link after modification: " + str(linkToInspect) + "\n")
+
+        if urlIsValid(linkToInspect, domain):
+            req2 = requests.get(linkToInspect)
+            if req2.ok:
+                if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [VALIDE]")
+                theLink = req2.url
+                req2.close()
+                if not str(theLink).__eq__(str(linkToInspect)):
+                    linkToInspect = theLink
+                    if DEBUG_LOOP: print("   Redirige vers: " + str(linkToInspect) + "\n")
+            else:
+                if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [ERREUR 404]")
+                req2.close()
 
         if not linkToInspect in allUrlVisited:
             allUrlVisited.append(linkToInspect)
+            file.write(allUrlVisited[-1] + "\n")  # Writte dans le fichier   (Temps réel)
             visitedCount.append(1)
-            if DEBUG: print("Request on " + linkToInspect + "  [NOT VISITED]")
+            if DEBUG_LOOP: print("      - Première visite ! (" + linkToInspect + ")")
             hasToVisit = True
-
         else:
             index = allUrlVisited.index(linkToInspect)
             visitedCount[index] += 1
-            if DEBUG: print("Request on " + linkToInspect + "  [VISITED]")
+            if DEBUG_LOOP: print("      -" + str(visitedCount[index]) + "eme visite ! (" + linkToInspect + ")")
             hasToVisit = False
 
-        if DEBUG: print("Profondeur : " + str(profondeur) + "\n")
+        if DEBUG: print("   - Profondeur : " + str(profondeur) + "\n")
         if (profondeur > 0 or profondeur == -1) and urlIsValid(linkToInspect, domain) and hasToVisit:
+            if DEBUG_ADD: print("   Liste des liens de : " + str(linkToInspect))
             returnList = listOfLinksOf(linkToInspect, domain)
+
             if profondeur != -1:
                 profondeur -= 1
 
             for x in returnList:
-                if not x in allUrlVisited:
+                if (not x in allUrlVisited) and urlIsValid(x, domain):  # ICI POUR TRIER LES PDF JPG ETC
                     listOfUrl.insert(0, x)
+        if DEBUG_LOOP: print(" -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- \n")
 
     end = time.time()
     if DEBUG: print("Ends at: " + str(end))
     if DEBUG: print("Time : " + str(end - start))
 
-    file = open("result.txt", 'w+')
-    file2 = open("fancyResult.txt", 'w+')
-    file2.write("Task ended in " + str(end - start) + " \n\n")
-    for element in range(0, len(allUrlVisited)):
-        file.write(allUrlVisited[element] + "\n")
+    # file = open("result.txt", 'w+')
+    file2 = open("fancyResult.csv", 'w+', newline='')
+    writer = csv.writer(file2)
 
-        amountOfSpace = 100 - len(str(allUrlVisited[element]))
-        file2.write(
-            str(allUrlVisited[element]) + (" " * amountOfSpace) + " : Visited " + str(visitedCount[element]) + "\n")
+    writer.writerow(["Task time:", str(end - start)])
+    writer.writerow(["Urls", "Visited count"])
+    # file2.write("Task ended in " + str(end - start) + " \n\n")
+    for element in range(0, len(allUrlVisited)):
+        # file.write(allUrlVisited[element] + "\n")
+        writer.writerow([str(allUrlVisited[element]), str(visitedCount[element])])
+
+        # amountOfSpace = 140 - len(str(allUrlVisited[element]))
+        # file2.write(
+        #     str(allUrlVisited[element]) + (" " * amountOfSpace) + " : Visited " + str(visitedCount[element]) + "\n")
+
+    file.close()
+    file2.close()
     return 1
 
 
@@ -77,10 +112,12 @@ def listOfLinksOf(url, domain):
     urlToCrawl = []
     try:
         req = requests.get(url)
-        if not req.ok:  # print(req.is_redirect)
+        if not req.ok:
             return urlToCrawl
 
         text = req.text
+        req.close()
+
         soup = BeautifulSoup(text, features="html.parser")
         links = soup.find_all('a')
 
@@ -92,7 +129,8 @@ def listOfLinksOf(url, domain):
             if link is not None and len(link.split(".")) == 2 and (link.endswith(".php") or link.endswith(".html")):
                 link = str(urlData.scheme) + "://" + str(urlData.netloc) + "/" + str(link)
             if link is not None and link.startswith("/") and not link == "/":
-                link = str(url[:-1]) + str(link)
+                # link = str(url[:-1]) + str(link)
+                link = str(urlData.scheme) + "://" + str(urlData.netloc) + str(link)
 
             newLinkData = urlparse(link)
 
@@ -105,19 +143,18 @@ def listOfLinksOf(url, domain):
         urlToCrawl = list(dict.fromkeys(urls))
 
         if DEBUG_REQUEST:
-            print("    " + str(url) + "\n    ---------------------------------------")
-            fileUrls = ""
+            print("      -> " + str(url) + "\n")
+            fileUrls = "     "
             for x in urlToCrawl:
-                fileUrls += "   " + str(x) + " |"
+                fileUrls += " " + str(x) + " |"
             print(fileUrls)
-            fileUrls = "   Trash : "
+            fileUrls = "      Trash : "
             for y in trash:
-                fileUrls += "   " + str(y) + " |"
+                fileUrls += " " + str(y) + " |"
             print(fileUrls)
-            print("    ---------------------------------------  \n\n")
 
     except Exception as error:
-        if DEBUG_REQUEST: print("   " + str(url) + ": Error  ( " + str(error) + ")\n")
+        if DEBUG_REQUEST: print("      -> " + str(url) + ": Error  ( " + str(error) + ")\n")
 
     return urlToCrawl
 
@@ -194,10 +231,6 @@ def verif(domain):
 
 
 if __name__ == "__main__":
-    # print(urlIsValid("http://petit-site-internet.com/contact.php", "petit-site-internet.com"))
-    # print(listOfLinksOf("http://petit-site-internet.com/contact.php", "petit-site-internet.com"))
-    # exit(1)
-
     # Temporaire
     url = "https://www.lirmm.fr/"
     deep = 10
@@ -205,6 +238,7 @@ if __name__ == "__main__":
     print("$ ./myCrawler " + url + " " + str(deep) + "\n")
     print(inspect(url, int(deep)))
 
+    exit(1)
     # Fin temporaire
 
     if len(sys.argv) < 2 or len(sys.argv) > 3:
@@ -220,6 +254,7 @@ if __name__ == "__main__":
 
         print("$ ./myCrawler " + url + " " + str(deep) + "\n")
         print(inspect(url, int(deep)))
+        exit(0)
 
         # verif()
         # print(inspect("http://www.lirmm.fr/", 3))
