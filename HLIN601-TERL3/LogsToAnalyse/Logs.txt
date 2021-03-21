@@ -1,0 +1,2435 @@
+D:\Logiciels\Python\python.exe "D:/Accès Rapide/Cours/S6-FACINFO/HLIN601-TERL3/MyCrawler.py" https://www.lirmm.fr/ 3
+$ ./myCrawler https://www.lirmm.fr/ 10
+
+URL: https://www.lirmm.fr/
+O : ParseResult(scheme='https', netloc='www.lirmm.fr', path='/', params='', query='', fragment='')
+
+Start at: 1616089140.441718
+visitedCount: []
+allUrlVisited: []
+
+Link selected: https://www.lirmm.fr/
+   Requette vers: https://www.lirmm.fr/  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/)
+   - Profondeur : 10
+
+   Liste des liens de : https://www.lirmm.fr/
+      -> https://www.lirmm.fr/
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/65 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | http://www.lirmm.fr/le-lirmm/presentation | http://www.lirmm.fr/recherche/departements/info | http://www.lirmm.fr/recherche/equipes | http://www.lirmm.fr/recherche/plateformes/plateforme-informatique | http://www.lirmm.fr/recherche/departements/rob | http://www.lirmm.fr/recherche/plateformes/plateforme-robotique | http://www.lirmm.fr/recherche/departements/mic | http://www.lirmm.fr/recherche/plateformes/plateforme-microelectronique | https://www.lirmm.fr/actualites/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom | https://www.lirmm.fr/actualites/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a | https://www.lirmm.fr/actualites/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes | http://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | #tabs-0 | #tabs-1 | #tabs-2 | mailto:contact@lirmm.fr | http://www.adum.fr/as/ed/proposition.pl?labo=1&site=ISS | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/65
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/65  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng
+
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng)
+   - Profondeur : 9
+
+   Liste des liens de : https://www.lirmm.fr/lirmm_eng
+      -> https://www.lirmm.fr/lirmm_eng
+
+      https://www.lirmm.fr/lirmm_eng | https://www.lirmm.fr/lirmm_eng/switchlanguage/to/lirmm/65 | https://www.lirmm.fr/lirmm_eng/rssfeed/news | https://www.lirmm.fr/lirmm_eng/directory | https://www.lirmm.fr/lirmm_eng/Partenariats-entreprises | https://www.lirmm.fr/lirmm_eng/Scientifiques-institutions | https://www.lirmm.fr/lirmm_eng/students | https://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation | https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization | https://www.lirmm.fr/lirmm_eng/lirmm-lab/key-figures | https://www.lirmm.fr/lirmm_eng/lirmm-lab/history | https://www.lirmm.fr/lirmm_eng/lirmm-lab/partnerships | https://www.lirmm.fr/lirmm_eng/lirmm-lab/jobs | https://www.lirmm.fr/lirmm_eng/lirmm-lab/central-services | https://www.lirmm.fr/lirmm_eng/news | https://www.lirmm.fr/lirmm_eng/agenda | https://www.lirmm.fr/lirmm_eng/research/departments | https://www.lirmm.fr/lirmm_eng/research/teams | https://www.lirmm.fr/lirmm_eng/research/plateformes | https://www.lirmm.fr/lirmm_eng/research/publications | https://www.lirmm.fr/lirmm_eng/research/phd-students | https://www.lirmm.fr/lirmm_eng/research/phds-and-hdrs-defended | https://www.lirmm.fr/lirmm_eng/research/conferences-and-summer-schools | https://www.lirmm.fr/lirmm_eng/research/phd-programs | https://www.lirmm.fr/lirmm_eng/innovation/our-skillset | https://www.lirmm.fr/lirmm_eng/innovation/partnerships | https://www.lirmm.fr/lirmm_eng/innovation/consulting-and-training | https://www.lirmm.fr/lirmm_eng/innovation/seminars | https://www.lirmm.fr/lirmm_eng/innovation/supporting-innovative-start-ups | https://www.lirmm.fr/lirmm_eng/international/international | https://www.lirmm.fr/lirmm_eng/contact-us | http://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation | http://www.lirmm.fr/lirmm_eng/recherche/departements/info | http://www.lirmm.fr/lirmm_eng/recherche/equipes | http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-informatique | http://www.lirmm.fr/lirmm_eng/recherche/departements/rob | http://www.lirmm.fr/lirmm_eng/recherche/plateformes/plateforme-robotique | http://www.lirmm.fr/lirmm_eng/recherche/departements/mic | http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-microelectronique | https://www.lirmm.fr/lirmm_eng/news/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom | https://www.lirmm.fr/lirmm_eng/news/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a | https://www.lirmm.fr/lirmm_eng/news/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes | http://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization/central-services/dist | http://www.lirmm.fr/lirmm_eng/lirmm/emplois | http://www.lirmm.fr/lirmm_eng/innovation/supporting-the-creation-of-innovative-start-ups | http://www.lirmm.fr/lirmm_eng/innovation/partnerships | http://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/lirmm_eng/content/view/sitemap/2 | https://www.lirmm.fr/lirmm_eng/information/terms-of-use |
+      Trash :  https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | # | # | # |  http://www.lirmm.fr/lirmm_eng/recherche/equipes | #tabs-0 | #tabs-1 | #tabs-2 | mailto:contact@lirmm.fr | http://www.adum.fr/as/ed/proposition.pl?labo=1&site=ISS | http://hal-lirmm.ccsd.cnrs.fr/ | https://cloud.lirmm.fr/ | https://gite.lirmm.fr | https://resa-stpriest.polepitot.univ-montp2.fr/ |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/rssfeed/news
+   Requette vers: https://www.lirmm.fr/rssfeed/news  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/rssfeed/news)
+   - Profondeur : 8
+
+   Liste des liens de : https://www.lirmm.fr/rssfeed/news
+      -> https://www.lirmm.fr/rssfeed/news
+
+
+      Trash :
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/annuaire
+   Requette vers: https://www.lirmm.fr/annuaire  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/annuaire)
+   - Profondeur : 7
+
+   Liste des liens de : https://www.lirmm.fr/annuaire
+      -> https://www.lirmm.fr/annuaire
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/97 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | / | http://www.dsi.cnrs.fr/RMLR/textesintegraux/volume4/411-l78-17.htm | mailto:cil@lirmm.fr | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      - Première visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 6
+
+   Liste des liens de : https://www.lirmm.fr/acces-entreprises
+      -> https://www.lirmm.fr/acces-entreprises
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/131 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | https://www.lirmm.fr/acces-entreprises | https://www.lirmm.fr/content/download/3648/81676/file/PlaquetteSante.pdf | https://www.lirmm.fr/content/download/12403/266126/file/Le LIRMM et les objets connectés.pdf | https://www.lirmm.fr/content/download/12804/269337/file/Big Data et Intelligence Artificielle.pdf | https://www.lirmm.fr/content/download/13554/275982/file/Plaquette LIRMM.pdf | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | / | mailto:pothier@lirmm.fr | mailto:valorisation@lirmm.fr | http://ec.europa.eu/index_fr.htm | http://www.enseignementsup-recherche.gouv.fr/ | http://www.laregion.fr/ | https://www.agence-adocc.com/agence/ | http://www.montpellier3m.fr/widgets/entreprendre | http://www.agence-nationale-recherche.fr/ | https://www.bpifrance.fr/ | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      - Première visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 5
+
+   Liste des liens de : https://www.lirmm.fr/acces-scientifiques
+      -> https://www.lirmm.fr/acces-scientifiques
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/132 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | https://www.lirmm.fr/acces-scientifiques | https://www.lirmm.fr/recherche/departements/info | https://www.lirmm.fr/recherche/departements/mic | https://www.lirmm.fr/recherche/departements/rob | https://www.lirmm.fr/recherche/plateformes-anc | https://www.lirmm.fr/content/download/3648/81676/file/PlaquetteSante.pdf | https://www.lirmm.fr/content/download/12403/266126/file/Le LIRMM et les objets connectés.pdf | https://www.lirmm.fr/content/download/12804/269337/file/Big Data et Intelligence Artificielle.pdf | https://www.lirmm.fr/content/download/13554/275982/file/Plaquette LIRMM.pdf | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | / | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/acces-etudiants
+   Requette vers: https://www.lirmm.fr/acces-etudiants  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/acces-etudiants)
+   - Profondeur : 4
+
+   Liste des liens de : https://www.lirmm.fr/acces-etudiants
+      -> https://www.lirmm.fr/acces-etudiants
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/133 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | https://www.lirmm.fr/content/download/12045/262767/file/Guide-EI-2018-FR.pdf | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | / | http://informatique.edu.umontpellier.fr/etudiants/offre-de-formation-master/ | http://informatique.edu.umontpellier.fr/etudiants/offre-de-formation-master/master-geomatique/ | http://sns.edu.umontpellier.fr/ | http://www.fdsweb.univ-montp2.fr/cursus-ingenierie/cursus-de-master-dingenierie-277 | http://www.eea.univ-montp2.fr/ | http://formations.univ-montp3.fr/fr/_modules/education/education.html?educationid=FR_RNE_0341089Z_PR_1297173748345 | mailto:conseil-doctorants@lirmm.fr | mailto:najima.maatoug@lirmm.fr | mailto:gwladys.imbert@lirmm.fr | mailto:Caroline.Lebrun@lirmm.fr | mailto:nadine.jacquet@lirmm.fr | mailto:nicolas.serrurier@lirmm.fr | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/presentation
+   Requette vers: https://www.lirmm.fr/le-lirmm/presentation  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/presentation)
+   - Profondeur : 3
+
+   Liste des liens de : https://www.lirmm.fr/le-lirmm/presentation
+      -> https://www.lirmm.fr/le-lirmm/presentation
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/110 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | https://www.lirmm.fr/content/download/13744/278277/file/Rapports d'activités - 2014-2019.pdf | https://www.lirmm.fr/content/download/13745/278280/file/Rapport d'activités - 2008-2013.pdf | https://www.lirmm.fr/content/download/13746/278283/file/Rapport d'activités - 2005-2008.pdf | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | / | None | http://www.univ-montp2.fr/ | http://www.cnrs.fr | http://hal-lirmm.ccsd.cnrs.fr/ | mailto:gouat@lirmm.fr | mailto:bibli@lirmm.fr | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/organisation)
+   - Profondeur : 2
+
+   Liste des liens de : https://www.lirmm.fr/le-lirmm/organisation
+      -> https://www.lirmm.fr/le-lirmm/organisation
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/112 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | https://www.lirmm.fr/le-lirmm/organisation/l-equipe-de-direction | https://www.lirmm.fr/le-lirmm/organisation/les-instances | https://www.lirmm.fr/le-lirmm/organisation/organigramme | https://www.lirmm.fr/le-lirmm/organisation/les-services | http://www.lirmm.fr/le-lirmm/organisation/les-services | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | / | None | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/chiffres-cle
+   Requette vers: https://www.lirmm.fr/le-lirmm/chiffres-cle  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/chiffres-cle)
+   - Profondeur : 1
+
+   Liste des liens de : https://www.lirmm.fr/le-lirmm/chiffres-cle
+      -> https://www.lirmm.fr/le-lirmm/chiffres-cle
+
+      https://www.lirmm.fr/switchlanguage/to/lirmm_eng/111 | https://www.lirmm.fr/rssfeed/news | https://www.lirmm.fr/annuaire | https://www.lirmm.fr/Partenariats-entreprises | https://www.lirmm.fr/Scientifiques-institutions | https://www.lirmm.fr/acces-etudiants | https://www.lirmm.fr/le-lirmm/presentation | https://www.lirmm.fr/le-lirmm/organisation | https://www.lirmm.fr/le-lirmm/chiffres-cle | https://www.lirmm.fr/le-lirmm/historique | https://www.lirmm.fr/le-lirmm/partenariats | https://www.lirmm.fr/le-lirmm/emplois | https://www.lirmm.fr/le-lirmm/les-services | https://www.lirmm.fr/actualites | https://www.lirmm.fr/agenda | https://www.lirmm.fr/recherche/departements | https://www.lirmm.fr/recherche/equipes | https://www.lirmm.fr/recherche/plateformes | https://www.lirmm.fr/recherche/publications | https://www.lirmm.fr/recherche/doctorants | https://www.lirmm.fr/recherche/theses-et-hdr-soutenues | https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques | https://www.lirmm.fr/recherche/sujets-de-these-proposes | https://www.lirmm.fr/innovation/nos-competences | https://www.lirmm.fr/innovation/partenariats-industriels | https://www.lirmm.fr/innovation/conseils-et-expertises | https://www.lirmm.fr/innovation/seminaires | https://www.lirmm.fr/innovation/creation-d-entreprises | https://www.lirmm.fr/international/international | https://www.lirmm.fr/contact-acces | https://www.lirmm.fr/le-lirmm/organisation/les-services/dist | https://www.lirmm.fr/le-lirmm/organisation/les-services/comm | https://www.lirmm.fr/lirmm_admin | https://www.lirmm.fr/extranet/manuel-redaction-web-LIRMM.pdf | https://www.lirmm.fr/content/view/sitemap/2 | https://www.lirmm.fr/informations/informations-legales |
+      Trash :  / | https://webmail.lirmm.fr/ | https://intranet.lirmm.fr/xml/in/0100-07.html | http://muse.edu.umontpellier.fr/ | http://www.cnrs.fr | http://www.umontpellier.fr | / | # | # | # | / | None | http://hal-lirmm.ccsd.cnrs.fr/ | https://seafile.lirmm.fr/ | https://gite.lirmm.fr | https://resapitot.ies.univ-montp2.fr/ | https://intranet.lirmm.fr/xml/in/0309-29.html |
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/le-lirmm/presentation
+   Requette vers: http://www.lirmm.fr/le-lirmm/presentation  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/le-lirmm/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/recherche/departements/info
+   Requette vers: http://www.lirmm.fr/recherche/departements/info  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/recherche/departements/info)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/recherche/equipes
+   Requette vers: http://www.lirmm.fr/recherche/equipes  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/recherche/plateformes/plateforme-informatique
+   Requette vers: http://www.lirmm.fr/recherche/plateformes/plateforme-informatique  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/recherche/plateformes/plateforme-informatique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/recherche/departements/rob
+   Requette vers: http://www.lirmm.fr/recherche/departements/rob  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/recherche/departements/rob)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/recherche/plateformes/plateforme-robotique
+   Requette vers: http://www.lirmm.fr/recherche/plateformes/plateforme-robotique  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/recherche/plateformes/plateforme-robotique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/recherche/departements/mic
+   Requette vers: http://www.lirmm.fr/recherche/departements/mic  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/recherche/departements/mic)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/recherche/plateformes/plateforme-microelectronique
+   Requette vers: http://www.lirmm.fr/recherche/plateformes/plateforme-microelectronique  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/recherche/plateformes/plateforme-microelectronique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom
+   Requette vers: https://www.lirmm.fr/actualites/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/actualites/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a
+   Requette vers: https://www.lirmm.fr/actualites/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/actualites/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes
+   Requette vers: https://www.lirmm.fr/actualites/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/actualites/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: http://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/switchlanguage/to/lirmm/65
+   Requette vers: https://www.lirmm.fr/lirmm_eng/switchlanguage/to/lirmm/65  [VALIDE]
+   Redirige vers: https://www.lirmm.fr
+
+      - Première visite ! (https://www.lirmm.fr)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/rssfeed/news
+   Requette vers: https://www.lirmm.fr/lirmm_eng/rssfeed/news  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/rssfeed/news)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/directory
+   Requette vers: https://www.lirmm.fr/lirmm_eng/directory  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/directory)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/lirmm_eng/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/businesses
+
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/businesses)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/lirmm_eng/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/scientists
+
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/scientists)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/students
+   Requette vers: https://www.lirmm.fr/lirmm_eng/students  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/students)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/key-figures
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/key-figures  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/key-figures)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/history
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/history  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/history)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/partnerships
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/partnerships  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/partnerships)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/jobs
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/jobs  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/jobs)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/central-services
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/central-services  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/central-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/news
+   Requette vers: https://www.lirmm.fr/lirmm_eng/news  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/news)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/agenda
+   Requette vers: https://www.lirmm.fr/lirmm_eng/agenda  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/departments
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/departments  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/departments)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/teams
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/teams  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/teams)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/plateformes
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/plateformes  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/publications
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/publications  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/phd-students
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/phd-students  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/phd-students)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/phds-and-hdrs-defended
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/phds-and-hdrs-defended  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/phds-and-hdrs-defended)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/conferences-and-summer-schools
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/conferences-and-summer-schools  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/conferences-and-summer-schools)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/research/phd-programs
+   Requette vers: https://www.lirmm.fr/lirmm_eng/research/phd-programs  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/research/phd-programs)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/innovation/our-skillset
+   Requette vers: https://www.lirmm.fr/lirmm_eng/innovation/our-skillset  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/innovation/our-skillset)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/innovation/partnerships
+   Requette vers: https://www.lirmm.fr/lirmm_eng/innovation/partnerships  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/innovation/partnerships)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/innovation/consulting-and-training
+   Requette vers: https://www.lirmm.fr/lirmm_eng/innovation/consulting-and-training  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/innovation/consulting-and-training)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/innovation/seminars
+   Requette vers: https://www.lirmm.fr/lirmm_eng/innovation/seminars  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/innovation/seminars)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/innovation/supporting-innovative-start-ups
+   Requette vers: https://www.lirmm.fr/lirmm_eng/innovation/supporting-innovative-start-ups  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/innovation/supporting-innovative-start-ups)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/international/international
+   Requette vers: https://www.lirmm.fr/lirmm_eng/international/international  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/contact-us
+   Requette vers: https://www.lirmm.fr/lirmm_eng/contact-us  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/contact-us)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation
+   Requette vers: http://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/recherche/departements/info
+   Requette vers: http://www.lirmm.fr/lirmm_eng/recherche/departements/info  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/recherche/departements/info)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/recherche/equipes
+   Requette vers: http://www.lirmm.fr/lirmm_eng/recherche/equipes  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-informatique
+   Requette vers: http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-informatique  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-informatique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/recherche/departements/rob
+   Requette vers: http://www.lirmm.fr/lirmm_eng/recherche/departements/rob  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/recherche/departements/rob)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/recherche/plateformes/plateforme-robotique
+   Requette vers: http://www.lirmm.fr/lirmm_eng/recherche/plateformes/plateforme-robotique  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/recherche/plateformes/plateforme-robotique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/recherche/departements/mic
+   Requette vers: http://www.lirmm.fr/lirmm_eng/recherche/departements/mic  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/recherche/departements/mic)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-microelectronique
+   Requette vers: http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-microelectronique  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-microelectronique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/news/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom
+   Requette vers: https://www.lirmm.fr/lirmm_eng/news/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/news/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/news/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a
+   Requette vers: https://www.lirmm.fr/lirmm_eng/news/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/news/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/news/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes
+   Requette vers: https://www.lirmm.fr/lirmm_eng/news/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/news/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: http://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -2eme visite ! (http://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization/central-services/dist
+   Requette vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization/central-services/dist  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization/central-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/lirmm/emplois
+   Requette vers: http://www.lirmm.fr/lirmm_eng/lirmm/emplois  [VALIDE]
+   Redirige vers: http://www.lirmm.fr/lirmm_eng/lirmm-lab/jobs
+
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/lirmm-lab/jobs)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/innovation/supporting-the-creation-of-innovative-start-ups
+   Requette vers: http://www.lirmm.fr/lirmm_eng/innovation/supporting-the-creation-of-innovative-start-ups  [VALIDE]
+   Redirige vers: http://www.lirmm.fr/lirmm_eng/innovation/supporting-innovative-start-ups
+
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/innovation/supporting-innovative-start-ups)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/lirmm_eng/innovation/partnerships
+   Requette vers: http://www.lirmm.fr/lirmm_eng/innovation/partnerships  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/lirmm_eng/innovation/partnerships)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: http://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/lirmm_eng/content/view/sitemap/2  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_eng/information/terms-of-use
+   Requette vers: https://www.lirmm.fr/lirmm_eng/information/terms-of-use  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/lirmm_eng/information/terms-of-use)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/97
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/97  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/directory
+
+      -2eme visite ! (https://www.lirmm.fr/lirmm_eng/directory)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      -2eme visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      -2eme visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/acces-etudiants
+   Requette vers: https://www.lirmm.fr/acces-etudiants  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/acces-etudiants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/presentation
+   Requette vers: https://www.lirmm.fr/le-lirmm/presentation  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/organisation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/chiffres-cle
+   Requette vers: https://www.lirmm.fr/le-lirmm/chiffres-cle  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/chiffres-cle)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      -2eme visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/131
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/131  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/businesses
+
+      -2eme visite ! (https://www.lirmm.fr/lirmm_eng/businesses)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      -3eme visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      -3eme visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/acces-etudiants
+   Requette vers: https://www.lirmm.fr/acces-etudiants  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/acces-etudiants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/presentation
+   Requette vers: https://www.lirmm.fr/le-lirmm/presentation  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/organisation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/chiffres-cle
+   Requette vers: https://www.lirmm.fr/le-lirmm/chiffres-cle  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/chiffres-cle)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      -3eme visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/132
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/132  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/scientists
+
+      -2eme visite ! (https://www.lirmm.fr/lirmm_eng/scientists)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      -4eme visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      -4eme visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/acces-etudiants
+   Requette vers: https://www.lirmm.fr/acces-etudiants  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/acces-etudiants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/presentation
+   Requette vers: https://www.lirmm.fr/le-lirmm/presentation  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/organisation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/chiffres-cle
+   Requette vers: https://www.lirmm.fr/le-lirmm/chiffres-cle  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/chiffres-cle)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements/info
+   Requette vers: https://www.lirmm.fr/recherche/departements/info  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/departements/info)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements/mic
+   Requette vers: https://www.lirmm.fr/recherche/departements/mic  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/departements/mic)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements/rob
+   Requette vers: https://www.lirmm.fr/recherche/departements/rob  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/recherche/departements/rob)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes-anc
+   Requette vers: https://www.lirmm.fr/recherche/plateformes-anc  [ERREUR 404]
+      - Première visite ! (https://www.lirmm.fr/recherche/plateformes-anc)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      -4eme visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/133
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/133  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/students
+
+      -2eme visite ! (https://www.lirmm.fr/lirmm_eng/students)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      -5eme visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      -5eme visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/presentation
+   Requette vers: https://www.lirmm.fr/le-lirmm/presentation  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/organisation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/chiffres-cle
+   Requette vers: https://www.lirmm.fr/le-lirmm/chiffres-cle  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/chiffres-cle)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      -5eme visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/110
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/110  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation
+
+      -2eme visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/presentation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      -6eme visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      -6eme visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/organisation)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/chiffres-cle
+   Requette vers: https://www.lirmm.fr/le-lirmm/chiffres-cle  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/chiffres-cle)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      -6eme visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/112
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/112  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization
+
+      -2eme visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      -7eme visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      -7eme visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/chiffres-cle
+   Requette vers: https://www.lirmm.fr/le-lirmm/chiffres-cle  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/le-lirmm/chiffres-cle)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      -7eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/l-equipe-de-direction
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/l-equipe-de-direction  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/organisation/l-equipe-de-direction)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-instances
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-instances  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-instances)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/organigramme
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/organigramme  [VALIDE]
+      - Première visite ! (https://www.lirmm.fr/le-lirmm/organisation/organigramme)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: http://www.lirmm.fr/le-lirmm/organisation/les-services
+   Requette vers: http://www.lirmm.fr/le-lirmm/organisation/les-services  [VALIDE]
+      - Première visite ! (http://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      -7eme visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/111
+   Requette vers: https://www.lirmm.fr/switchlanguage/to/lirmm_eng/111  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/lirmm_eng/lirmm-lab/key-figures
+
+      -2eme visite ! (https://www.lirmm.fr/lirmm_eng/lirmm-lab/key-figures)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Partenariats-entreprises
+   Requette vers: https://www.lirmm.fr/Partenariats-entreprises  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-entreprises
+
+      -8eme visite ! (https://www.lirmm.fr/acces-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/Scientifiques-institutions
+   Requette vers: https://www.lirmm.fr/Scientifiques-institutions  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/acces-scientifiques
+
+      -8eme visite ! (https://www.lirmm.fr/acces-scientifiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/historique
+   Requette vers: https://www.lirmm.fr/le-lirmm/historique  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/le-lirmm/historique)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/partenariats
+   Requette vers: https://www.lirmm.fr/le-lirmm/partenariats  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/le-lirmm/partenariats)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/emplois
+   Requette vers: https://www.lirmm.fr/le-lirmm/emplois  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/le-lirmm/emplois)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/les-services
+   Requette vers: https://www.lirmm.fr/le-lirmm/les-services  [VALIDE]
+   Redirige vers: https://www.lirmm.fr/le-lirmm/organisation/les-services
+
+      -9eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/actualites
+   Requette vers: https://www.lirmm.fr/actualites  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/actualites)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/agenda
+   Requette vers: https://www.lirmm.fr/agenda  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/agenda)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/departements
+   Requette vers: https://www.lirmm.fr/recherche/departements  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/departements)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/equipes
+   Requette vers: https://www.lirmm.fr/recherche/equipes  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/equipes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/plateformes
+   Requette vers: https://www.lirmm.fr/recherche/plateformes  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/plateformes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/publications
+   Requette vers: https://www.lirmm.fr/recherche/publications  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/publications)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/doctorants
+   Requette vers: https://www.lirmm.fr/recherche/doctorants  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/doctorants)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues
+   Requette vers: https://www.lirmm.fr/recherche/theses-et-hdr-soutenues  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/theses-et-hdr-soutenues)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques
+   Requette vers: https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/conferences-et-ecoles-thematiques)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/recherche/sujets-de-these-proposes
+   Requette vers: https://www.lirmm.fr/recherche/sujets-de-these-proposes  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/recherche/sujets-de-these-proposes)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/nos-competences
+   Requette vers: https://www.lirmm.fr/innovation/nos-competences  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/innovation/nos-competences)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/partenariats-industriels
+   Requette vers: https://www.lirmm.fr/innovation/partenariats-industriels  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/innovation/partenariats-industriels)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/conseils-et-expertises
+   Requette vers: https://www.lirmm.fr/innovation/conseils-et-expertises  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/innovation/conseils-et-expertises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/seminaires
+   Requette vers: https://www.lirmm.fr/innovation/seminaires  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/innovation/seminaires)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/innovation/creation-d-entreprises
+   Requette vers: https://www.lirmm.fr/innovation/creation-d-entreprises  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/innovation/creation-d-entreprises)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/international/international
+   Requette vers: https://www.lirmm.fr/international/international  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/international/international)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/contact-acces
+   Requette vers: https://www.lirmm.fr/contact-acces  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/contact-acces)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/dist  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/dist)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
+   Requette vers: https://www.lirmm.fr/le-lirmm/organisation/les-services/comm  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/le-lirmm/organisation/les-services/comm)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/lirmm_admin
+   Requette vers: https://www.lirmm.fr/lirmm_admin  [VALIDE]
+      -9eme visite ! (https://www.lirmm.fr/lirmm_admin)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/content/view/sitemap/2
+   Requette vers: https://www.lirmm.fr/content/view/sitemap/2  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/content/view/sitemap/2)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Link selected: https://www.lirmm.fr/informations/informations-legales
+   Requette vers: https://www.lirmm.fr/informations/informations-legales  [VALIDE]
+      -8eme visite ! (https://www.lirmm.fr/informations/informations-legales)
+   - Profondeur : 0
+
+ -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+
+Ends at: 1616089306.3053386
+Time : 165.86362051963806
+1
+
+Process finished with exit code 1

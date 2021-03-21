@@ -54,7 +54,8 @@ def inspect(url, deep):
                     linkToInspect = theLink
                     if DEBUG_LOOP: print("   Redirige vers: " + str(linkToInspect) + "\n")
             else:
-                if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [ERREUR 404]")
+                theError = req2.status_code
+                if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [ERREUR " + str(theError) + "]")
                 req2.close()
 
         if not linkToInspect in allUrlVisited:
@@ -87,7 +88,7 @@ def inspect(url, deep):
     if DEBUG: print("Time : " + str(end - start))
 
     # file = open("result.txt", 'w+')
-    file2 = open("fancyResult.csv", 'w+', newline='')
+    file2 = open("resultFancy.csv", 'w+', newline='')
     writer = csv.writer(file2)
 
     writer.writerow(["Task time:", str(end - start)])
