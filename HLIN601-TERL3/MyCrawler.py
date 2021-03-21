@@ -44,10 +44,12 @@ def inspect(url, deep):
             linkToInspect = str(o.scheme) + "://" + str(o.netloc) + str(linkToInspect)
             if DEBUG_LOOP: print("   Link after modification: " + str(linkToInspect) + "\n")
 
-        if urlIsValid(linkToInspect, domain):
+        returnError = False    # Truc a modifier pour réduire le nombre de requetes par ici
+        if urlIsValid(linkToInspect, domain):  # and (not linkToInspect in allUrlVisited):
             req2 = requests.get(linkToInspect)
             if req2.ok:
                 if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [VALIDE]")
+                returnError = False
                 theLink = req2.url
                 req2.close()
                 if not str(theLink).__eq__(str(linkToInspect)):
@@ -56,6 +58,7 @@ def inspect(url, deep):
             else:
                 theError = req2.status_code
                 if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [ERREUR " + str(theError) + "]")
+                returnError = True
                 req2.close()
 
         if not linkToInspect in allUrlVisited:
