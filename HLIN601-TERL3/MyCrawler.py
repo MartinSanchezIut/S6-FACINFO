@@ -6,36 +6,51 @@ from bs4 import BeautifulSoup
 import sys
 import csv
 
+# Global variables to enable debugging
+#   - Writte in stdout
 DEBUG = True
 DEBUG_LOOP = True
 DEBUG_REQUEST = True
 DEBUG_ADD = True
 
 
+#    def inspect(url, deep)
+#        - url : link to crawl
+#        - deep : number of layers to crawl
+#
 def inspect(url, deep):
+    # Global variables for debugging
     global DEBUG, DEBUG_ADD, DEBUG_LOOP
+
+    # Open the file for the results
     file = open("result.txt", 'w+')
 
     if DEBUG: print("URL: " + url)
 
+    # Get the domain of the given URL
     o = urlparse(url)
     domain = o.netloc  # .removeprefix("www.")
     if DEBUG: print("O : " + str(o) + "\n")
 
+    # Save when the crawler start
     start = time.time()
     if DEBUG: print("Start at: " + str(start))
 
+    # Lists for links visited and how many they get visited
     visitedCount = []
     allUrlVisited = []
     if DEBUG: print("visitedCount: " + str(visitedCount))
     if DEBUG: print("allUrlVisited: " + str(allUrlVisited) + "\n")
 
+    # Stack of all urls,  profondeur = deep = amount of request
     listOfUrl = [url]
     profondeur = deep
     while len(listOfUrl) > 0:
+        # Get an element of the stack
         linkToInspect = listOfUrl.pop()
         if DEBUG_LOOP: print("Link selected: " + str(linkToInspect))
 
+        # If it's not a "valid" link, try to correct it
         if linkToInspect is not None and len(linkToInspect.split(".")) == 2 and (
                 linkToInspect.endswith(".php") or linkToInspect.endswith(".html")):
             linkToInspect = str(o.scheme) + "://" + str(o.netloc) + "/" + str(linkToInspect)
@@ -44,26 +59,34 @@ def inspect(url, deep):
             linkToInspect = str(o.scheme) + "://" + str(o.netloc) + str(linkToInspect)
             if DEBUG_LOOP: print("   Link after modification: " + str(linkToInspect) + "\n")
 
-        returnError = False    # Truc a modifier pour réduire le nombre de requetes par ici
-        if urlIsValid(linkToInspect, domain):  # and (not linkToInspect in allUrlVisited):
-            req2 = requests.get(linkToInspect)
-            if req2.ok:
-                if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [VALIDE]")
-                returnError = False
-                theLink = req2.url
-                req2.close()
-                if not str(theLink).__eq__(str(linkToInspect)):
-                    linkToInspect = theLink
-                    if DEBUG_LOOP: print("   Redirige vers: " + str(linkToInspect) + "\n")
-            else:
-                theError = req2.status_code
-                if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [ERREUR " + str(theError) + "]")
-                returnError = True
-                req2.close()
+        # Verification if the request is possible, no errors ?
+        returnError = False
+        if urlIsValid(linkToInspect, domain) and (not linkToInspect in allUrlVisited):
+            try:
+                req2 = requests.get(linkToInspect)
+                if req2.ok:
+                    if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [VALIDE]")
+                    returnError = False
+                    theLink = req2.url
+                    req2.close()
 
+                    # Vérifier si c'est une rédirection : si ça en est une remplacer par le lien cible
+                    if not str(theLink).__eq__(str(linkToInspect)):
+                        linkToInspect = theLink
+                        if DEBUG_LOOP: print("   Redirige vers: " + str(linkToInspect) + "\n")
+                else:
+                    theError = req2.status_code
+                    if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [ERREUR " + str(theError) + "]")
+                    returnError = True
+                    req2.close()
+            except Exception as error:
+                if DEBUG_REQUEST: print("      -> " + str(linkToInspect) + ": Error  ( " + str(error) + ")\n")
+
+        # Vérification si le lien a déja été visité, dans ce cas augmenter le compeur de visites
         if not linkToInspect in allUrlVisited:
             allUrlVisited.append(linkToInspect)
-            file.write(allUrlVisited[-1] + "\n")  # Writte dans le fichier   (Temps réel)
+            if not returnError:
+                file.write(allUrlVisited[-1] + "\n")  # Writte dans le fichier   (Temps réel)
             visitedCount.append(1)
             if DEBUG_LOOP: print("      - Première visite ! (" + linkToInspect + ")")
             hasToVisit = True
@@ -73,8 +96,12 @@ def inspect(url, deep):
             if DEBUG_LOOP: print("      -" + str(visitedCount[index]) + "eme visite ! (" + linkToInspect + ")")
             hasToVisit = False
 
+        # Si tout les test précédents on été réussi: faire la requette
         if DEBUG: print("   - Profondeur : " + str(profondeur) + "\n")
-        if (profondeur > 0 or profondeur == -1) and urlIsValid(linkToInspect, domain) and hasToVisit:
+        if (profondeur > 0 or profondeur == -1) and urlIsValid(linkToInspect, domain) and hasToVisit \
+                and (not returnError):
+
+            # Appel a listOfLinksOf : récupération ded la liste des liens de la page
             if DEBUG_ADD: print("   Liste des liens de : " + str(linkToInspect))
             returnList = listOfLinksOf(linkToInspect, domain)
 
@@ -86,14 +113,17 @@ def inspect(url, deep):
                     listOfUrl.insert(0, x)
         if DEBUG_LOOP: print(" -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- \n")
 
+    # Enregistrer la date de fin du crawler
     end = time.time()
     if DEBUG: print("Ends at: " + str(end))
     if DEBUG: print("Time : " + str(end - start))
 
+    # Ouverture du fichier excel
     # file = open("result.txt", 'w+')
     file2 = open("resultFancy.csv", 'w+', newline='')
     writer = csv.writer(file2)
 
+    # Ecriture du fichier excel
     writer.writerow(["Task time:", str(end - start)])
     writer.writerow(["Urls", "Visited count"])
     # file2.write("Task ended in " + str(end - start) + " \n\n")
@@ -105,11 +135,16 @@ def inspect(url, deep):
         # file2.write(
         #     str(allUrlVisited[element]) + (" " * amountOfSpace) + " : Visited " + str(visitedCount[element]) + "\n")
 
+    # Fermeture des fichier
     file.close()
     file2.close()
     return 1
 
 
+#    def urlIsValid(url, domain)
+#        - url : link to test
+#        - domain : domain of the link
+#
 def listOfLinksOf(url, domain):
     global DEBUG_REQUEST
     urlData = urlparse(url)
@@ -163,6 +198,10 @@ def listOfLinksOf(url, domain):
     return urlToCrawl
 
 
+#    def urlIsValid(url, domain)
+#        - url : link to test
+#        - domain : domain of the link
+#
 def urlIsValid(url, domain):
     tab = url.split("/")
     last = tab[-1]
@@ -237,7 +276,7 @@ def verif(domain):
 if __name__ == "__main__":
     # Temporaire
     url = "https://www.lirmm.fr/"
-    deep = 10
+    deep = 10000
 
     print("$ ./myCrawler " + url + " " + str(deep) + "\n")
     print(inspect(url, int(deep)))

@@ -37,9 +37,9 @@ http://www.lirmm.fr/recherche/departements/rob
 http://www.lirmm.fr/recherche/plateformes/plateforme-robotique
 http://www.lirmm.fr/recherche/departements/mic
 http://www.lirmm.fr/recherche/plateformes/plateforme-microelectronique
-https://www.lirmm.fr/actualites/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom
+https://www.lirmm.fr/actualites/vendredi-19-mars-2021-visite-d-antoine-petit-president-du-cnrs
+https://www.lirmm.fr/actualites/webinaire-exploitez-l-intelligence-de-vos-documents-le-20-mai-2021-de-10h-a-12h-sur-zoom
 https://www.lirmm.fr/actualites/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a
-https://www.lirmm.fr/actualites/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes
 http://www.lirmm.fr/le-lirmm/emplois
 https://www.lirmm.fr/le-lirmm/organisation/les-services/dist
 https://www.lirmm.fr/le-lirmm/organisation/les-services/comm
@@ -84,9 +84,9 @@ http://www.lirmm.fr/lirmm_eng/recherche/departements/rob
 http://www.lirmm.fr/lirmm_eng/recherche/plateformes/plateforme-robotique
 http://www.lirmm.fr/lirmm_eng/recherche/departements/mic
 http://www.lirmm.fr/lirmm_eng/research/plateformes/plateforme-microelectronique
-https://www.lirmm.fr/lirmm_eng/news/webinaire-exploitez-l-intelligence-de-vos-documents-le-18-mars-2021-de-10h-a-12h-sur-zoom
+https://www.lirmm.fr/lirmm_eng/news/vendredi-19-mars-2021-visite-d-antoine-petit-president-du-cnrs
+https://www.lirmm.fr/lirmm_eng/news/webinaire-exploitez-l-intelligence-de-vos-documents-le-20-mai-2021-de-10h-a-12h-sur-zoom
 https://www.lirmm.fr/lirmm_eng/news/acusurgical-leve-6-m-5-75m-dans-le-cadre-d-un-financement-de-serie-a
-https://www.lirmm.fr/lirmm_eng/news/vendredi-19-fevrier-visite-de-mme-bourguignon-ministre-deleguee-a-l-autonomie-a-l-etape-au-pole-autonomie-sante-de-lattes
 https://www.lirmm.fr/lirmm_eng/lirmm-lab/organization/central-services/dist
 http://www.lirmm.fr/lirmm_eng/lirmm-lab/jobs
 http://www.lirmm.fr/lirmm_eng/innovation/supporting-innovative-start-ups
@@ -97,7 +97,6 @@ https://www.lirmm.fr/lirmm_eng/information/terms-of-use
 https://www.lirmm.fr/recherche/departements/info
 https://www.lirmm.fr/recherche/departements/mic
 https://www.lirmm.fr/recherche/departements/rob
-https://www.lirmm.fr/recherche/plateformes-anc
 https://www.lirmm.fr/le-lirmm/organisation/l-equipe-de-direction
 https://www.lirmm.fr/le-lirmm/organisation/les-instances
 https://www.lirmm.fr/le-lirmm/organisation/organigramme
