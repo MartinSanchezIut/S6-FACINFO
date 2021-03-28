@@ -29,7 +29,9 @@ def inspect(url, deep):
 
     # Get the domain of the given URL
     o = urlparse(url)
-    domain = o.netloc  # .removeprefix("www.")
+    domain = o.netloc
+    if (not o.scheme) or (not domain):
+        return "Error : Empty url: " + str(url)
     if DEBUG: print("O : " + str(o) + "\n")
 
     # Save when the crawler start
@@ -50,18 +52,9 @@ def inspect(url, deep):
         linkToInspect = listOfUrl.pop()
         if DEBUG_LOOP: print("Link selected: " + str(linkToInspect))
 
-        # If it's not a "valid" link, try to correct it
-        if linkToInspect is not None and len(linkToInspect.split(".")) == 2 and (
-                linkToInspect.endswith(".php") or linkToInspect.endswith(".html")):
-            linkToInspect = str(o.scheme) + "://" + str(o.netloc) + "/" + str(linkToInspect)
-            if DEBUG_LOOP: print("   Link after modification: " + str(linkToInspect) + "\n")
-        if linkToInspect is not None and linkToInspect.startswith("/") and not linkToInspect == "/":
-            linkToInspect = str(o.scheme) + "://" + str(o.netloc) + str(linkToInspect)
-            if DEBUG_LOOP: print("   Link after modification: " + str(linkToInspect) + "\n")
-
         # Verification if the request is possible, no errors ?
         returnError = False
-        if urlIsValid(linkToInspect, domain) and (not linkToInspect in allUrlVisited):
+        if urlIsValid(linkToInspect) and (not linkToInspect in allUrlVisited):
             try:
                 req2 = requests.get(linkToInspect)
                 if req2.ok:
@@ -80,6 +73,7 @@ def inspect(url, deep):
                     returnError = True
                     req2.close()
             except Exception as error:
+                returnError = True
                 if DEBUG_REQUEST: print("      -> " + str(linkToInspect) + ": Error  ( " + str(error) + ")\n")
 
         # Vérification si le lien a déja été visité, dans ce cas augmenter le compeur de visites
@@ -97,20 +91,28 @@ def inspect(url, deep):
             hasToVisit = False
 
         # Si tout les test précédents on été réussi: faire la requette
-        if DEBUG: print("   - Profondeur : " + str(profondeur) + "\n")
-        if (profondeur > 0 or profondeur == -1) and urlIsValid(linkToInspect, domain) and hasToVisit \
+        if (profondeur > 0 or profondeur == -1) and urlIsValid(linkToInspect) and hasToVisit \
                 and (not returnError):
 
+            if DEBUG: print("   - Profondeur : " + str(profondeur) + "\n")
+            if DEBUG: print("   Liste des liens de : " + str(linkToInspect))
+
             # Appel a listOfLinksOf : récupération ded la liste des liens de la page
-            if DEBUG_ADD: print("   Liste des liens de : " + str(linkToInspect))
             returnList = listOfLinksOf(linkToInspect, domain)
 
             if profondeur != -1:
                 profondeur -= 1
 
+            """
+            Ici ya un truc a réfléchir: Que faire des liens qui ont été trouvé mais pas visités ?
+            """
             for x in returnList:
-                if (not x in allUrlVisited) and urlIsValid(x, domain):  # ICI POUR TRIER LES PDF JPG ETC
+                if (not x in allUrlVisited) and urlIsValid(x):
                     listOfUrl.insert(0, x)
+        else:
+            if DEBUG: print("   - No request:  p=" + str(profondeur) + " valid=" + str(urlIsValid(linkToInspect))
+                            + " hasToVisit=" + str(hasToVisit) + " error=" + str(returnError) + "\n")
+
         if DEBUG_LOOP: print(" -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- \n")
 
     # Enregistrer la date de fin du crawler
@@ -119,21 +121,14 @@ def inspect(url, deep):
     if DEBUG: print("Time : " + str(end - start))
 
     # Ouverture du fichier excel
-    # file = open("result.txt", 'w+')
     file2 = open("resultFancy.csv", 'w+', newline='')
     writer = csv.writer(file2)
 
     # Ecriture du fichier excel
     writer.writerow(["Task time:", str(end - start)])
     writer.writerow(["Urls", "Visited count"])
-    # file2.write("Task ended in " + str(end - start) + " \n\n")
     for element in range(0, len(allUrlVisited)):
-        # file.write(allUrlVisited[element] + "\n")
         writer.writerow([str(allUrlVisited[element]), str(visitedCount[element])])
-
-        # amountOfSpace = 140 - len(str(allUrlVisited[element]))
-        # file2.write(
-        #     str(allUrlVisited[element]) + (" " * amountOfSpace) + " : Visited " + str(visitedCount[element]) + "\n")
 
     # Fermeture des fichier
     file.close()
@@ -164,22 +159,63 @@ def listOfLinksOf(url, domain):
         trash = []
         for tag in links:
             link = tag.get('href', None)
-
-            if link is not None and len(link.split(".")) == 2 and (link.endswith(".php") or link.endswith(".html")):
-                link = str(urlData.scheme) + "://" + str(urlData.netloc) + "/" + str(link)
-            if link is not None and link.startswith("/") and not link == "/":
-                # link = str(url[:-1]) + str(link)
-                link = str(urlData.scheme) + "://" + str(urlData.netloc) + str(link)
-
             newLinkData = urlparse(link)
 
-            if str(newLinkData.netloc).__contains__(domain):
-                if link is not None and not link.startswith("#") and not link.startswith("mailto:"):
+            # ZONE A TRAVAILLER
+            if link is not None and not link.startswith("#") and not link.startswith("mailto:"):
+                if (not newLinkData.scheme) and (not newLinkData.netloc) and newLinkData.path:
+                    # I'm a relative link
+                    link = str(urlData.scheme) + "://" + str(urlData.netloc) + "/"  # En gros on met http://domaine/
+
+                    tab = urlData.path.split("/")
+                    last = tab.pop()
+                    """                                     Truc très douteux
+                    if len(last.split(".")) != 2:
+                        tab.pop()
+                    """
+                    for i in tab:
+                        if i != "":
+                            link += str(i) + "/"
+
+                    if link.endswith("/"):
+                        link = link[:-1]
+
+                    if str(newLinkData.path).startswith("/"):
+                        link += str(newLinkData.path)
+                    else:
+                        link += "/" + str(newLinkData.path)
+
+                    """
+                    if str(urlData.path).startswith("/"):
+                        link += str(urlData.path)
+                    else:
+                        link += "/" + str(urlData.path)
+
+                    if link.endswith("/"):
+                        link.removesuffix("/")
+
+                    if str(newLinkData.path).startswith("/"):
+                        link += str(newLinkData.path)
+                    else:
+                        link += "/" + str(newLinkData.path)
+                    """
                     urls.append(link)
+
+                elif newLinkData.scheme and newLinkData.netloc:
+                    # I'm an absolute link
+                    if str(newLinkData.netloc).__eq__(domain):
+                        urls.append(link)
+                    else:
+                        trash.append(link)
+
+                else:
+                    # I don't know what i am
+                    trash.append(link)
             else:
                 trash.append(link)
 
-        urlToCrawl = list(dict.fromkeys(urls))
+        # Supprimer les duplicatas
+        urlToCrawl = list(set(urls))
 
         if DEBUG_REQUEST:
             print("      -> " + str(url) + "\n")
@@ -202,21 +238,31 @@ def listOfLinksOf(url, domain):
 #        - url : link to test
 #        - domain : domain of the link
 #
-def urlIsValid(url, domain):
-    tab = url.split("/")
-    last = tab[-1]
-    if last.__eq__(domain):
+def urlIsValid(url):
+    parsed = urlparse(url)
+    if (not parsed.scheme) or (not parsed.netloc):
+        return False
+    else:
+        tab = parsed.path  # tab = url.split("/")
+        if tab.__eq__(""):
+            return True
+
+        last = tab[-1]
+        if last.__eq__("/"):
+            return True
+        else:
+            i = len(tab) - 1
+            while i > 0:
+                if tab[i] == ".":
+                    # Verifier les terminaisons
+                    if not (tab.endswith(".html") or tab.endswith(".php")):
+                        return False
+                i -= 1
+
         return True
-    for i in range(0, len(last)):
-        if last[i] == ".":
-            # On trouve un point avant un /
-            # Verifier les terminaisons
-            if not (last.endswith(".html") or last.endswith(".php")):
-                return False
-    return True
 
 
-def verif(domain):
+def verif():
     urlToValid = ['http://www.lirmm.fr/',
                   'http://www.lirmm.fr/switchlanguage/to/lirmm_eng/65',
                   'http://www.lirmm.fr/rssfeed/news',
@@ -270,13 +316,25 @@ def verif(domain):
                   'https://intranet.lirmm.fr/xml/in/0309-29.html']
 
     for i in range(0, len(urlToValid)):
-        print(str(urlToValid[i]) + "  =   " + str(urlIsValid(urlToValid[i], domain)))
+        print(str(urlToValid[i]) + "  =   " + str(urlIsValid(urlToValid[i])))
 
 
 if __name__ == "__main__":
+    """
+    listOfLinksOf("http://127.0.0.1/SiteToCrawl", "127.0.0.1")
+    print("\n")
+    listOfLinksOf("http://127.0.0.1/SiteToCrawl/", "127.0.0.1")
+    print("\n")
+    listOfLinksOf("http://127.0.0.1/SiteToCrawl/index.html", "127.0.0.1")
+    print("\n")
+    listOfLinksOf("http://127.0.0.1/SiteToCrawl/menu.html", "127.0.0.1")
+    print("\n")
+
+    exit(0)
+    """
     # Temporaire
-    url = "https://www.lirmm.fr/"
-    deep = 10000
+    url = "https://www.lirmm.fr/"    # url = "http://127.0.0.1/SiteToCrawl/"
+    deep = 10                   # deep = -1
 
     print("$ ./myCrawler " + url + " " + str(deep) + "\n")
     print(inspect(url, int(deep)))
@@ -298,7 +356,3 @@ if __name__ == "__main__":
         print("$ ./myCrawler " + url + " " + str(deep) + "\n")
         print(inspect(url, int(deep)))
         exit(0)
-
-        # verif()
-        # print(inspect("http://www.lirmm.fr/", 3))
-        # print(listOfLinksOf("http://www.lirmm.fr/"))
