@@ -162,48 +162,37 @@ def listOfLinksOf(url, domain):
             newLinkData = urlparse(link)
 
             # ZONE A TRAVAILLER
-            if link is not None and not link.startswith("#") and not link.startswith("mailto:"):
+            if (link != "") and (link is not None) and (not link.startswith("#")):
+
                 if (not newLinkData.scheme) and (not newLinkData.netloc) and newLinkData.path:
-                    # I'm a relative link
-                    link = str(urlData.scheme) + "://" + str(urlData.netloc) + "/"  # En gros on met http://domaine/
+                    if link.startswith("/"):
+                        # I'm a absolute link
+                        link = str(urlData.scheme) + "://" + str(urlData.netloc) + str(newLinkData.path)
 
-                    tab = urlData.path.split("/")
-                    last = tab.pop()
-                    """                                     Truc très douteux
-                    if len(last.split(".")) != 2:
-                        tab.pop()
-                    """
-                    for i in tab:
-                        if i != "":
-                            link += str(i) + "/"
-
-                    if link.endswith("/"):
-                        link = link[:-1]
-
-                    if str(newLinkData.path).startswith("/"):
-                        link += str(newLinkData.path)
                     else:
-                        link += "/" + str(newLinkData.path)
+                        # I'm a relative link
+                        link = str(urlData.scheme) + "://" + str(urlData.netloc) + "/"  # En gros on met http://domaine/
 
-                    """
-                    if str(urlData.path).startswith("/"):
-                        link += str(urlData.path)
-                    else:
-                        link += "/" + str(urlData.path)
+                        tab = urlData.path.split("/")
+                        last = tab.pop()
 
-                    if link.endswith("/"):
-                        link.removesuffix("/")
+                        for i in tab:
+                            if i != "":
+                                link += str(i) + "/"
 
-                    if str(newLinkData.path).startswith("/"):
-                        link += str(newLinkData.path)
-                    else:
-                        link += "/" + str(newLinkData.path)
-                    """
-                    urls.append(link)
+                        if link.endswith("/"):
+                            link = link[:-1]
+
+                        if str(newLinkData.path).startswith("/"):
+                            link += str(newLinkData.path)
+                        else:
+                            link += "/" + str(newLinkData.path)
+
+                        urls.append(link)
 
                 elif newLinkData.scheme and newLinkData.netloc:
-                    # I'm an absolute link
-                    if str(newLinkData.netloc).__eq__(domain):
+                    # Lien est complet: rien a traiter
+                    if str(newLinkData.netloc).__eq__(domain) and (newLinkData.scheme == "http" or newLinkData.scheme == "https"):
                         urls.append(link)
                     else:
                         trash.append(link)
@@ -319,22 +308,22 @@ def verif():
         print(str(urlToValid[i]) + "  =   " + str(urlIsValid(urlToValid[i])))
 
 
-if __name__ == "__main__":
+if __name__ == "__main__":    #  href="www.lirmm.fr/~bdurand/cn7/docs.html">
     """
-    listOfLinksOf("http://127.0.0.1/SiteToCrawl", "127.0.0.1")
+    listOfLinksOf("https://www.lirmm.fr/", "www.lirmm.fr")
     print("\n")
-    listOfLinksOf("http://127.0.0.1/SiteToCrawl/", "127.0.0.1")
+    listOfLinksOf("http://www.lirmm.fr/recherche/departements/info", "www.lirmm.fr")
     print("\n")
-    listOfLinksOf("http://127.0.0.1/SiteToCrawl/index.html", "127.0.0.1")
-    print("\n")
-    listOfLinksOf("http://127.0.0.1/SiteToCrawl/menu.html", "127.0.0.1")
-    print("\n")
+    # listOfLinksOf("http://127.0.0.1/SiteToCrawl/index.html", "127.0.0.1")
+    # print("\n")
+    # listOfLinksOf("http://127.0.0.1/SiteToCrawl/menu.html", "127.0.0.1")
+    # print("\n")
 
     exit(0)
     """
     # Temporaire
-    url = "https://www.lirmm.fr/"    # url = "http://127.0.0.1/SiteToCrawl/"
-    deep = 10                   # deep = -1
+    url = "https://www.lirmm.fr/"  # url = "http://127.0.0.1/SiteToCrawl/"
+    deep = 200  # deep = -1
 
     print("$ ./myCrawler " + url + " " + str(deep) + "\n")
     print(inspect(url, int(deep)))

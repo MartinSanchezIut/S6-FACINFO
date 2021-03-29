@@ -1,11 +1,3 @@
-def erreursVerifies():
-    tab = ["Requette vers: https://www.lirmm.fr/recherche/plateformes-anc  [ERREUR 401]",  # Liste des liens de : https://www.lirmm.fr/acces-scientifiques
-           "Requette vers: https://www.lirmm.fr/recherche/plateformes-anc  [ERREUR 404]",
-
-           ""]
-    return tab
-
-
 if __name__ == "__main__":
     path = input("Chemin vers le fichier a analyser :")
     print("\n")
@@ -18,7 +10,7 @@ if __name__ == "__main__":
     nbrErrors = 0
     nbrErrorsSET = 0
     for i in lines:
-        if ("[ERREUR " in str(i)) and (not str(i) in erreursVerifies()):
+        if "[ERREUR " in str(i):
             nbrErrors += 1
 
             text = "Line : " + str(lineNbr) + " " + str(i)
