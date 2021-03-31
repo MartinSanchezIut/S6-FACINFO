@@ -1,6 +1,8 @@
 {
     "files.associations": {
         "cmath": "c",
-        "types.h": "c"
+        "types.h": "c",
+        "string.h": "c",
+        "typeinfo": "c"
     }
 }
