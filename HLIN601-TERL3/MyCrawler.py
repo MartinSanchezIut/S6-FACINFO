@@ -192,7 +192,8 @@ def listOfLinksOf(url, domain):
 
                 elif newLinkData.scheme and newLinkData.netloc:
                     # Lien est complet: rien a traiter
-                    if str(newLinkData.netloc).__eq__(domain) and (newLinkData.scheme == "http" or newLinkData.scheme == "https"):
+                    if str(newLinkData.netloc).__eq__(domain) and (
+                            newLinkData.scheme == "http" or newLinkData.scheme == "https"):
                         urls.append(link)
                     else:
                         trash.append(link)
@@ -308,7 +309,7 @@ def verif():
         print(str(urlToValid[i]) + "  =   " + str(urlIsValid(urlToValid[i])))
 
 
-if __name__ == "__main__":    #  href="www.lirmm.fr/~bdurand/cn7/docs.html">
+if __name__ == "__main__":  # href="www.lirmm.fr/~bdurand/cn7/docs.html">
     """
     listOfLinksOf("https://www.lirmm.fr/", "www.lirmm.fr")
     print("\n")
@@ -322,8 +323,8 @@ if __name__ == "__main__":    #  href="www.lirmm.fr/~bdurand/cn7/docs.html">
     exit(0)
     """
     # Temporaire
-    url = "https://www.lirmm.fr/"  # url = "http://127.0.0.1/SiteToCrawl/"
-    deep = 200  # deep = -1
+    url = "https://jsparrow.eu/" # "https://www.lirmm.fr/"  # url = "http://127.0.0.1/SiteToCrawl/"
+    deep = 5  # deep = -1
 
     print("$ ./myCrawler " + url + " " + str(deep) + "\n")
     print(inspect(url, int(deep)))

@@ -1,8 +1,16 @@
+import re
+
+
+def howToSort(str):
+    regex = '.*  [ERREUR \d+]$'
+    match = re.match(regex, str)
+    return match
+
+
 if __name__ == "__main__":
     path = input("Chemin vers le fichier a analyser :")
-    print("\n")
-    file = open(path, 'r', encoding='utf-8')
 
+    file = open(path, 'r', encoding='utf-8')
     lines = file.readlines()
 
     listErrors = []
@@ -14,17 +22,12 @@ if __name__ == "__main__":
             nbrErrors += 1
 
             text = "Line : " + str(lineNbr) + " " + str(i)
-            print(text, end="")
-
-            if not text in listErrors:
-                listErrors.append("Line : " + str(lineNbr) + " " + str(i))
-                nbrErrorsSET += 1
+            listErrors.append(text)
 
         lineNbr += 1
 
-    print("\n" + str(nbrErrors) + " erreurs trouvés (" + str(nbrErrorsSET) + ")")
-    print("Erreurs sans doublons : ")
-    for i in range(0, len(listErrors)):
-        print(listErrors[i], end="")
+    print(str(nbrErrors) + " erreurs trouvés \n")
 
+    for i in listErrors:
+        print(str(i), end="")
     file.close()
