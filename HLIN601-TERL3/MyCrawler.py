@@ -13,6 +13,7 @@ DEBUG_LOOP = True
 DEBUG_REQUEST = True
 DEBUG_ADD = True
 
+ErrorCount = 0
 
 #    def inspect(url, deep)
 #        - url : link to crawl
@@ -47,6 +48,7 @@ def inspect(url, deep):
     # Stack of all urls,  profondeur = deep = amount of request
     listOfUrl = [url]
     profondeur = deep
+    AmountOfErrors = 0
     while len(listOfUrl) > 0:
         # Get an element of the stack
         linkToInspect = listOfUrl.pop()
@@ -69,6 +71,7 @@ def inspect(url, deep):
                         if DEBUG_LOOP: print("   Redirige vers: " + str(linkToInspect) + "\n")
                 else:
                     theError = req2.status_code
+                    AmountOfErrors += 1
                     if DEBUG_LOOP: print("   Requette vers: " + str(linkToInspect) + "  [ERREUR " + str(theError) + "]")
                     returnError = True
                     req2.close()
@@ -125,7 +128,8 @@ def inspect(url, deep):
     writer = csv.writer(file2)
 
     # Ecriture du fichier excel
-    writer.writerow(["Task time:", str(end - start)])
+    writer.writerow(["Task time", "Amount of links", "Amount of errors"])
+    writer.writerow([str(end - start), str(len(allUrlVisited)), str(AmountOfErrors)])
     writer.writerow(["Urls", "Visited count"])
     for element in range(0, len(allUrlVisited)):
         writer.writerow([str(allUrlVisited[element]), str(visitedCount[element])])
@@ -323,8 +327,8 @@ if __name__ == "__main__":  # href="www.lirmm.fr/~bdurand/cn7/docs.html">
     exit(0)
     """
     # Temporaire
-    url = "https://jsparrow.eu/" # "https://www.lirmm.fr/"  # url = "http://127.0.0.1/SiteToCrawl/"
-    deep = 5  # deep = -1
+    url = "https://www.lirmm.fr/"  # url = "http://127.0.0.1/SiteToCrawl/"
+    deep = 10  # deep = -1
 
     print("$ ./myCrawler " + url + " " + str(deep) + "\n")
     print(inspect(url, int(deep)))
