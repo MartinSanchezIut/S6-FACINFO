@@ -328,7 +328,7 @@ if __name__ == "__main__":  # href="www.lirmm.fr/~bdurand/cn7/docs.html">
     """
     # Temporaire
     url = "https://www.lirmm.fr/"  # url = "http://127.0.0.1/SiteToCrawl/"
-    deep = 10  # deep = -1
+    deep = 5  # deep = -1
 
     print("$ ./myCrawler " + url + " " + str(deep) + "\n")
     print(inspect(url, int(deep)))
